@@ -1,0 +1,6 @@
+uuid: 715d6bf9-61a4-4414-bf48-043f0e8d5497
+name: hayabusa2yk
+primary-group: default
+parents:
+- default
+- moderator

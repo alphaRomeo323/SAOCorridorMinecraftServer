@@ -1,0 +1,149 @@
+# === FrameProtect Configuration File ===
+# #Set the language of the messages. Language files are stored in 'FrameProtect/language' and they should be ANSI encoded.
+# language: en_US
+# 
+# #The command used to interact with FrameProtect. Set to '' if you don't want any command to be registered (not recommended).
+# command: fp
+# 
+# #The prefix FrameProtect uses for chat messages.
+# prefix: §c[§bFP§c] §6
+# 
+# #En- or disable those annoying messages.
+# messages:
+#   createAndDestroy: true
+#   cantBuild: true
+#   notYours: true
+# 
+# settings:
+# 
+#   #How often FrameProtect should update protections of armor stands and item frames to save their items/location.
+#   autoSaveInSeconds: 60
+# 
+#   #If true, FrameProtect will check if there are newer versions of the plugin.
+#   allowUpdateCheck: true
+# 
+#   #If true, FrameProtect will try to auto protect armor stands.
+#   tryToAutoProtectArmorStands: true
+# 
+#   protected:
+# 
+#     #If false, protected objects will not break due to natural causes like not being attached to a block.
+#     naturalBreaking: false
+# 
+#     #If false, protected objects will not break due to damage by mobs.
+#     breakingByMobs: false
+# 
+#     #If true, protected objects will be respawned if they disappear for no apparent reason. (It is not recommended to turn this off)
+#     respawnDisappeared: true
+# 
+#     #If true, blocks with protected objects attached to them can't be destroyed.
+#     #This may affect the performance of your server if you have thousands of protected objects.
+#     protectBlocks: true
+# 
+#     #If false, it's not possible to place a block on the same location as a protected object.
+#     blockOnHanging: false
+# 
+#     #If true, pistons can't move blocks if this would cause a block to overlap a protected object.
+#     #This may affect the performance of your server if you have many piston based redstone circuits.
+#     verifyPistonMovement: false
+# 
+#     #If true, even if you are the owner of an object, you will not be able to damage it by shooting at it.
+#     #This only affects armor stands and item containing item frames.
+#     protectFromProjectile: true
+# 
+#   unprotected:
+# 
+#     #If true, not protected objects will break due to natural causes like not being attached to a block.
+#     naturalBreaking: true
+# 
+#     #If true, not protected objects will break due to damage by mobs.
+#     breakingByMobs: true
+# 
+#     #If true, you will not be able to damage a not protected object item by shooting at it.
+#     #This only affects armor stands and item containing item frames.
+#     protectFromProjectile: false
+# 
+# log:
+# 
+#   #Whether to write errors & exceptions to log files.
+#   writeErrorLog: true
+# 
+#   #If true, everything related to disappeared object respawning will be logged to neither the console nor the log.
+#   ignoreRespawnErrors: true
+# 
+# mysql:
+# 
+#   #Whether to use MySQL or SQLite.
+#   use: false
+# 
+#   #Whether the connection should always be open when using MySQL.
+#   alwaysOpen: false
+# 
+#   #Whether to commit changes instant to the database when using MySQL. Worlds and new players will always be saved instantly to maintain database integrity.
+#   instantSave: true
+# 
+#   #How often FrameProtect should commit changes to the database when mysql.instantSave is false.
+#   mysqlSaveIntervalInSeconds: 60
+# 
+#   #MySQL server address
+#   host: localhost
+# 
+#   #MySQL server port
+#   port: '3306'
+# 
+#   #MySQL database
+#   database: database
+# 
+#   #MySQL username
+#   username: username
+# 
+#   #MySQL password
+#   password: password
+# 
+#   #Table names
+#   table:
+#     players: fp_players
+#     worlds: fp_worlds
+#     protections: fp_protections
+
+version: 2
+language: en_US
+command: fp
+prefix: §c[§bFP§c] §6
+messages:
+  createAndDestroy: true
+  cantBuild: true
+  notYours: true
+settings:
+  autoSaveInSeconds: 60
+  allowUpdateCheck: true
+  tryToAutoProtectArmorStands: true
+  protected:
+    naturalBreaking: false
+    breakingByMobs: false
+    respawnDisappeared: true
+    protectBlocks: true
+    blockOnHanging: false
+    verifyPistonMovement: false
+    protectFromProjectile: true
+  unprotected:
+    naturalBreaking: true
+    breakingByMobs: true
+    protectFromProjectile: false
+log:
+  writeErrorLog: true
+  ignoreRespawnErrors: true
+mysql:
+  use: false
+  alwaysOpen: false
+  instantSave: true
+  mysqlSaveIntervalInSeconds: 60
+  host: localhost
+  port: '3306'
+  database: database
+  username: username
+  password: password
+  table:
+    players: fp_players
+    worlds: fp_worlds
+    protections: fp_protections

@@ -1,0 +1,90 @@
+portals:
+  exit:
+    entryfee:
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    handlerscript: ''
+    owner: alphaRomeo323
+    location: -25.0,65.0,59.0:-25.0,68.0,62.0
+    world: world
+  world-nether:
+    entryfee:
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    handlerscript: ''
+    owner: alphaRomeo323
+    location: -11.0,65.0,63.0:-8.0,68.0,66.0
+    world: world
+    destination: p:nether-world
+  nether-world:
+    entryfee:
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    handlerscript: ''
+    owner: alphaRomeo323
+    location: -26.0,40.0,30.0:-25.0,42.0,32.0
+    world: world_nether
+    destination: p:exit
+  urban-world:
+    entryfee:
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    handlerscript: ''
+    owner: alphaRomeo323
+    location: 36.0,68.0,89.0:37.0,69.0,90.0
+    world: urban
+    destination: p:exit
+  world-urban:
+    entryfee:
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    handlerscript: ''
+    owner: alphaRomeo323
+    location: -17.0,65.0,63.0:-14.0,68.0,66.0
+    world: world
+    destination: p:urban-world
+  world-sigen:
+    entryfee:
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    handlerscript: ''
+    owner: alphaRomeo323
+    location: -11.0,65.0,55.0:-8.0,68.0,58.0
+    world: world
+    destination: p:sigen-world
+  sigen-world:
+    entryfee:
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    handlerscript: ''
+    owner: alphaRomeo323
+    location: -175.0,49.0,-69.0:-174.0,50.0,-68.0
+    world: sigen
+    destination: p:exit
+  event2_1:
+    entryfee:
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    handlerscript: ''
+    owner: alphaRomeo323
+    location: -1390.0,38.0,-666.0:-1390.0,39.0,-666.0
+    world: world
+    destination: p:exit
+  event2_2:
+    entryfee:
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    handlerscript: ''
+    owner: alphaRomeo323
+    location: -23.0,65.0,55.0:-20.0,68.0,58.0
+    world: world
+    destination: p:event2_1

@@ -1,0 +1,15 @@
+lastName: alalat
+lastSave: 0
+earnedIncome: 0.0
+seenPitch: false
+dateModified: 1576683617459
+language: en
+jobs:
+  taxes:
+    showEveryTime: true
+    exp: 0.0
+    level: 1
+  bulldozer:
+    showEveryTime: true
+    exp: 0.0
+    level: 1

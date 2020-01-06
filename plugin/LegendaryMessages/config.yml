@@ -1,0 +1,89 @@
+# %player_name% - Works on 'Returning_Join_Message' and 'New_Join_Message' and 'Message_of_The_Day' and 'Quit_Message'
+# %total_players% - Works on 'New_Join_Message'
+# %killer% and %weapon% - works on Player Death Message
+# %killed% and %world% - works on all death messages
+MOTD:
+  Enabled: false
+  Message: '&bようこそ!'
+New_Join_Message:
+  Enabled: true
+  Message: '&dはじめまして、 %player_name%　/n& 現在、 %total_players% 人のプレイヤーがいます。'
+Returning_Join_Message:
+  Enabled: true
+  Message: '&d%player_name% がサーバーにログインしました。おかえり!'
+Quit_Message:
+  Enabled: true
+  Message: '&d%player_name% が退出しました。'
+Kick_Message:
+  Enabled: false
+  Message: '&e%player_name% が退出しました。'
+Death_Message:
+  Enabled: true
+  Messages:
+    Player: '&c%killed% &7は &c%killer% &7の &c%weapon% &7によって殺されました。 該当ワールド: &c%world%'
+    Mobs:
+      DEFAULT:
+      - '&c%killed% &7は &c%mob% &7によって殺されました。 該当ワールド: &c%world%'
+      ZOMBIE:
+      - '&c%killed% &7は &c%mob% &7に襲われました。 該当ワールド: &c%world%'
+      - '&c%killed% &7は &c%mob% &7によって噛みちぎられました。 該当ワールド: &c%world%'
+      SHULKER:
+      - '&c%killed% &7は &c%mob% &7に射殺されました。 該当ワールド: world_end'
+    Other:
+      DROWNING:
+      - '&c%killed% &7は溺れ死にました。'
+      FALL:
+      - '&c%killed% &7は落下の衝撃で力尽きました。 該当ワールド: &c%world%'
+      FIRE:
+      - '&c%killed% &7は火だるまになりました。 該当ワールド: &c%world%'
+      SUFFOCATION:
+      - '&c%killed% &7は息ができなくなりました。 該当ワールド: &c%world%'
+      VOID:
+      - '&c%killed% &7は無の世界に帰りました。 該当ワールド: &c%world%'
+      STARVATION:
+      - '&c%killed% &7Starved To Death'
+      SUICIDE:
+      - '&c%killed% &7Decided To End It All'
+      MAGIC:
+      - '&c%killed% &7was killed by magic'
+      POISON:
+      - '&c%killed% &7was poisoned to death!'
+      LIGHTENING:
+      - '&c%killed% &7was struck by lightening!'
+      LAVA:
+      - '&c%killed% &7tried to swim in lava'
+      FIRE_TICK:
+      - '&c%killed% &7died from the burns of fire'
+      ENDER_PEARL:
+      - '&c%killed% &7died from throwing an ender pearl'
+      CONTACT:
+      - '&c%killed% &7was pricked by a &cCactus'
+      BLOCK_EXPLOSION:
+      - '&c%killed% &7blew up'
+    UnknownReason: '%killed% Just Died... (Cause: %cause%)'
+Whitelist_Message: '&fYou are not White-Listed on this server!'
+Say_Prefix: '&d[Server]'
+AutoUpdate: false
+UseNicknames: true
+AutoMessages:
+  Enabled: false
+  UseBarAPI: false
+  Interval: 20
+  Prefix: '&f[&eお知らせ&f]'
+  NewLinePrefix: true
+  Messages:
+    global:
+      interval: 3600
+      use_permission: false
+      permission: LegendaryMessages.AutoMessages.global
+      list:
+      - null: ://alpharomeo.f5.si:8123/
+    vip:
+      interval: 10000
+      use_permission: true
+      permission: LegendaryMessages.AutoMessages.vip
+      list:
+      - Vip 1
+      - Vip 2
+      - Vip 3
+      - Vip 4

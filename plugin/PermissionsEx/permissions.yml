@@ -1,0 +1,47 @@
+groups:
+  default:
+    options:
+      default: true
+    permissions:
+    - modifyworld.*
+    - minecraft.command.teleport
+  Moderator:
+    options:
+      default: false
+    permissions:
+    - minecraft.command.gamemode
+    - bukkit.command.kick
+    inheritance:
+    - default
+  Admin:
+    options:
+      default: false
+    permissions:
+    - -minecraft.command.seed
+    - -bukkkit command.stop
+    - '*'
+users:
+  930e79ca-60e5-4761-ab82-d3c00eb189c9:
+    group:
+    - Admin
+    options:
+      name: alphaRomeo323
+  4612fb73-47c9-456f-a640-05c67efa4cb6:
+    group:
+    - Admin
+    options:
+      name: tokyo677
+  5530b25e-b26d-4006-be30-d72c81f857e6:
+    group:
+    - Admin
+    options:
+      name: SORYU501
+  1c727416-f6bc-4ee1-bd91-6433ab10eb87:
+    options:
+      prefix: Moderator
+      name: JAH_rinsei2060
+  439de3a8-1acf-44c0-8410-e5306cccd69f:
+    options:
+      name: Rinnosuke0126
+      prefix: Admin
+schema-version: 1

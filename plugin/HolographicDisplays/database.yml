@@ -1,0 +1,42 @@
+urban_note:
+  location: world, -14.998, 67.000, 63.403
+  lines:
+  - '&1高島市ワールド(クリエイティブ)'
+  - '&lワールドに入るとインベントリがリセットされます!!'
+nether_note:
+  location: world, -8.994, 67.000, 63.325
+  lines:
+  - '&cネザー'
+sigen_note:
+  location: world, -8.995, 67.000, 58.699
+  lines:
+  - '&b資源ワールド'
+chestditictor:
+  location: world, 3.500, 71.500, 1.500
+  lines:
+  - '&c&nDON''T TOUCH ME'
+tintai:
+  location: world, -67.698, 71.200, -71.998
+  lines:
+  - 利用者は看板に名前を書いてください!
+Map:
+  location: world, -16.330, 71.200, 59.528
+  lines:
+  - 回廊市内マップ
+portal:
+  location: sigen, -223.532, 73.500, 10.515
+  lines:
+  - '&a通常ワールド帰還ポータル'
+nportal:
+  location: world_nether, -23.500, 41.200, 31.500
+  lines:
+  - '&b回廊市&aへのポータル'
+exitinfo:
+  location: sigen, -174.000, 50.200, -66.500
+  lines:
+  - '&aメインワールド&b帰還ポータル'
+event1_note:
+  location: world, -21.000, 66.500, 58.500
+  lines:
+  - '&b&oイベント開催中！'
+  - '&c&lエンダードラゴン討伐作戦'
