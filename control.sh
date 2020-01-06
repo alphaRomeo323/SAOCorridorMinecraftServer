@@ -36,7 +36,7 @@ elif [ "${1}" = "start" ]; then #スタート
     logger -s -p user.info -t [server] Already started PaperMC server.
     exit 3 #↑多重起動防止
   elif [ "${2}" = "t" ]; then
-    screen -AmdS papermc java -server -Xms${mem} -Xmx${mem} -jar paper-${ver}.jar #ログ出力付き起動
+    screen -AmdS papermc java -Xms${mem} -Xmx${mem} -jar paper-${ver}.jar #ログ出力付き起動
   else
     screen -AmdS papermc java -server -Xms${mem} -Xmx${mem} -jar paper-${ver}.jar nogui #通常起動
   fi
