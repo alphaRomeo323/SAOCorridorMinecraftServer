@@ -23,7 +23,7 @@ elif [ "${1}" = "stop" ]; then #ストップ
   while [ 1 -eq `screen -ls | grep "papermc" | wc -l` ] ; do
     sleep ${mon}
     count=$(( ${count} + ${mon} ))
-    if [ $COUNT -gt $timeout ]; then
+    if [ $count -gt $timeout ]; then
         # タイムアウト
         logger -s -p user.err -t [server] PaperMC server stop timeout detected.
         pkill -9 java
