@@ -5,7 +5,7 @@ mem="1024M" #メモリ割り当て(byte)
 int=10 #終了インターバル(sec)
 mon=5 #監視インターバル(sec)
 timeout=120 #最大監視時間(sec)
-if [ "${1}" = "help" ] || [ -z "${1}"]; then
+if [ "${1}" = "help" ] || [ -z "${1}" ]; then
   echo -e "PaperMC Server Control.sh Help\n\nstart...サーバーをバックグラウンドで起動\nstart t...サーバーをテストモード(ログ表示状態)で起動\nstop...サーバーを${int}秒後に終了\nstop f...サーバーを即時に終了"
   #ヘルプを表示
 elif [ "${1}" = "stop" ]; then #ストップ
