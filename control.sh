@@ -34,11 +34,11 @@ elif [ "${1}" = "stop" ]; then #ストップ
 elif [ "${1}" = "start" ]; then #スタート
   if [ 1 -eq `screen -ls | grep "papermc" | wc -l` ] ; then
     logger -s -p user.info -t [server] Already started PaperMC server.
-    exit 3
-  elif [ "${2}" = "t" ]
-    screen -AmdS papermc java -server -Xms${mem} -Xmx${mem} -jar paper-${ver}.jar
+    exit 3 #↑多重起動防止
+  elif [ "${2}" = "t" ]; then
+    screen -AmdS papermc java -server -Xms${mem} -Xmx${mem} -jar paper-${ver}.jar #ログ出力付き起動
   else
-    screen -AmdS papermc java -server -Xms${mem} -Xmx${mem} -jar paper-${ver}.jar nogui
+    screen -AmdS papermc java -server -Xms${mem} -Xmx${mem} -jar paper-${ver}.jar nogui #通常起動
   fi
 else
   echo "Server Control Failed : 不適切な引数が検出されました。(${1})"
