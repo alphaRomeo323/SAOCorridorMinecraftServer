@@ -1,225 +1,24 @@
-[09:12:01] [Server thread/INFO]: Starting minecraft server version 1.14.4
-[09:12:01] [Server thread/INFO]: Loading properties
-[09:12:01] [Server thread/INFO]: This server is running Paper version git-Paper-238 (MC: 1.14.4) (Implementing API version 1.14.4-R0.1-SNAPSHOT)
-[09:12:02] [Server thread/INFO]: Server Ping Player Sample Count: 12
-[09:12:02] [Server thread/INFO]: Using 4 threads for Netty based IO
-[09:12:02] [Server thread/INFO]: Debug logging is disabled
-[09:12:02] [Server thread/INFO]: Default game type: SURVIVAL
-[09:12:02] [Server thread/INFO]: Generating keypair
-[09:12:02] [Server thread/INFO]: Starting Minecraft server on *:25365
-[09:12:02] [Server thread/INFO]: Using epoll channel type
-[09:12:07] [Server thread/INFO]: [LuckPerms] Loading LuckPerms v5.0.39
-[09:12:07] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
-[09:12:07] [Server thread/INFO]: [LuckPerms] Enabling LuckPerms v5.0.39
-[09:12:07] [Server thread/INFO]:         __    
-[09:12:07] [Server thread/INFO]:   |    |__)   LuckPerms v5.0.39
-[09:12:07] [Server thread/INFO]:   |___ |      Running on Bukkit - Paper
-[09:12:07] [Server thread/INFO]: 
-[09:12:07] [Server thread/INFO]: [LuckPerms] Loading configuration...
-[09:12:10] [Server thread/INFO]: [LuckPerms] Loading storage provider... [MARIADB]
-[09:12:10] [Server thread/INFO]: [me.lucko.luckperms.lib.hikari.HikariDataSource] luckperms-hikari - Starting...
-[09:12:10] [Server thread/INFO]: [me.lucko.luckperms.lib.hikari.HikariDataSource] luckperms-hikari - Start completed.
-[09:12:15] [Server thread/INFO]: [LuckPerms] Loading messaging service... [SQL]
-[09:12:16] [Server thread/INFO]: [LuckPerms] Loading internal permission managers...
-[09:12:16] [Server thread/INFO]: [LuckPerms] Performing initial data load...
-[09:12:17] [Server thread/INFO]: [LuckPerms] Successfully enabled. (took 9796ms)
-[09:12:17] [Server thread/INFO]: Preparing level "world"
-[09:12:17] [Server thread/INFO]: Reloading ResourceManager: Default, bukkit
-[09:12:17] [Server thread/INFO]: Loaded 6 recipes
-[09:12:18] [Server thread/INFO]: -------- World Settings For [world] --------
-[09:12:18] [Server thread/INFO]: Experience Merge Radius: 3.0
-[09:12:18] [Server thread/INFO]: Mob Spawn Range: 8
-[09:12:18] [Server thread/INFO]: Cactus Growth Modifier: 100%
-[09:12:18] [Server thread/INFO]: Cane Growth Modifier: 100%
-[09:12:18] [Server thread/INFO]: Melon Growth Modifier: 100%
-[09:12:18] [Server thread/INFO]: Mushroom Growth Modifier: 100%
-[09:12:18] [Server thread/INFO]: Pumpkin Growth Modifier: 100%
-[09:12:18] [Server thread/INFO]: Sapling Growth Modifier: 100%
-[09:12:18] [Server thread/INFO]: Beetroot Growth Modifier: 100%
-[09:12:18] [Server thread/INFO]: Carrot Growth Modifier: 100%
-[09:12:18] [Server thread/INFO]: Potato Growth Modifier: 100%
-[09:12:18] [Server thread/INFO]: Wheat Growth Modifier: 100%
-[09:12:18] [Server thread/INFO]: NetherWart Growth Modifier: 100%
-[09:12:18] [Server thread/INFO]: Vine Growth Modifier: 100%
-[09:12:18] [Server thread/INFO]: Cocoa Growth Modifier: 100%
-[09:12:18] [Server thread/INFO]: Bamboo Growth Modifier: 100%
-[09:12:18] [Server thread/INFO]: SweetBerry Growth Modifier: 100%
-[09:12:18] [Server thread/INFO]: Kelp Growth Modifier: 100%
-[09:12:18] [Server thread/INFO]: Entity Activation Range: An 32 / Mo 32 / Ra 48 / Mi 16 / Tiv true
-[09:12:18] [Server thread/INFO]: Entity Tracking Range: Pl 48 / An 48 / Mo 48 / Mi 32 / Other 64
-[09:12:18] [Server thread/INFO]: Hopper Transfer: 8 Hopper Check: 1 Hopper Amount: 1
-[09:12:18] [Server thread/INFO]: Custom Map Seeds:  Village: 10387312 Desert: 14357617 Igloo: 14357618 Jungle: 14357619 Swamp: 14357620 Monument: 10387313Ocean: 14357621 Shipwreck: 165745295 Slime: 987234911
-[09:12:18] [Server thread/INFO]: Max TNT Explosions: 100
-[09:12:18] [Server thread/INFO]: Tile Max Tick Time: 50ms Entity max Tick Time: 50ms
-[09:12:18] [Server thread/INFO]: View Distance: 10
-[09:12:18] [Server thread/INFO]: Allow Zombie Pigmen to spawn from portal blocks: true
-[09:12:18] [Server thread/INFO]: Item Merge Radius: 2.5
-[09:12:18] [Server thread/INFO]: Item Despawn Rate: 6000
-[09:12:18] [Server thread/INFO]: Arrow Despawn Rate: 1200
-[09:12:18] [Server thread/INFO]: Zombie Aggressive Towards Villager: true
-[09:12:18] [Server thread/INFO]: Nerfing mobs spawned from spawners: false
-[09:12:19] [Server thread/INFO]: -------- World Settings For [world_nether] --------
-[09:12:19] [Server thread/INFO]: Experience Merge Radius: 3.0
-[09:12:19] [Server thread/INFO]: Mob Spawn Range: 8
-[09:12:19] [Server thread/INFO]: Cactus Growth Modifier: 100%
-[09:12:19] [Server thread/INFO]: Cane Growth Modifier: 100%
-[09:12:19] [Server thread/INFO]: Melon Growth Modifier: 100%
-[09:12:19] [Server thread/INFO]: Mushroom Growth Modifier: 100%
-[09:12:19] [Server thread/INFO]: Pumpkin Growth Modifier: 100%
-[09:12:19] [Server thread/INFO]: Sapling Growth Modifier: 100%
-[09:12:19] [Server thread/INFO]: Beetroot Growth Modifier: 100%
-[09:12:19] [Server thread/INFO]: Carrot Growth Modifier: 100%
-[09:12:19] [Server thread/INFO]: Potato Growth Modifier: 100%
-[09:12:19] [Server thread/INFO]: Wheat Growth Modifier: 100%
-[09:12:19] [Server thread/INFO]: NetherWart Growth Modifier: 100%
-[09:12:19] [Server thread/INFO]: Vine Growth Modifier: 100%
-[09:12:19] [Server thread/INFO]: Cocoa Growth Modifier: 100%
-[09:12:19] [Server thread/INFO]: Bamboo Growth Modifier: 100%
-[09:12:19] [Server thread/INFO]: SweetBerry Growth Modifier: 100%
-[09:12:19] [Server thread/INFO]: Kelp Growth Modifier: 100%
-[09:12:19] [Server thread/INFO]: Entity Activation Range: An 32 / Mo 32 / Ra 48 / Mi 16 / Tiv true
-[09:12:19] [Server thread/INFO]: Entity Tracking Range: Pl 48 / An 48 / Mo 48 / Mi 32 / Other 64
-[09:12:19] [Server thread/INFO]: Hopper Transfer: 8 Hopper Check: 1 Hopper Amount: 1
-[09:12:19] [Server thread/INFO]: Custom Map Seeds:  Village: 10387312 Desert: 14357617 Igloo: 14357618 Jungle: 14357619 Swamp: 14357620 Monument: 10387313Ocean: 14357621 Shipwreck: 165745295 Slime: 987234911
-[09:12:19] [Server thread/INFO]: Max TNT Explosions: 100
-[09:12:19] [Server thread/INFO]: Tile Max Tick Time: 50ms Entity max Tick Time: 50ms
-[09:12:19] [Server thread/INFO]: View Distance: 10
-[09:12:19] [Server thread/INFO]: Allow Zombie Pigmen to spawn from portal blocks: true
-[09:12:19] [Server thread/INFO]: Item Merge Radius: 2.5
-[09:12:19] [Server thread/INFO]: Item Despawn Rate: 6000
-[09:12:19] [Server thread/INFO]: Arrow Despawn Rate: 1200
-[09:12:19] [Server thread/INFO]: Zombie Aggressive Towards Villager: true
-[09:12:19] [Server thread/INFO]: Nerfing mobs spawned from spawners: false
-[09:12:19] [Server thread/INFO]: -------- World Settings For [world_the_end] --------
-[09:12:19] [Server thread/INFO]: Experience Merge Radius: 3.0
-[09:12:19] [Server thread/INFO]: Mob Spawn Range: 8
-[09:12:19] [Server thread/INFO]: Cactus Growth Modifier: 100%
-[09:12:19] [Server thread/INFO]: Cane Growth Modifier: 100%
-[09:12:19] [Server thread/INFO]: Melon Growth Modifier: 100%
-[09:12:19] [Server thread/INFO]: Mushroom Growth Modifier: 100%
-[09:12:19] [Server thread/INFO]: Pumpkin Growth Modifier: 100%
-[09:12:19] [Server thread/INFO]: Sapling Growth Modifier: 100%
-[09:12:19] [Server thread/INFO]: Beetroot Growth Modifier: 100%
-[09:12:19] [Server thread/INFO]: Carrot Growth Modifier: 100%
-[09:12:19] [Server thread/INFO]: Potato Growth Modifier: 100%
-[09:12:19] [Server thread/INFO]: Wheat Growth Modifier: 100%
-[09:12:19] [Server thread/INFO]: NetherWart Growth Modifier: 100%
-[09:12:19] [Server thread/INFO]: Vine Growth Modifier: 100%
-[09:12:19] [Server thread/INFO]: Cocoa Growth Modifier: 100%
-[09:12:19] [Server thread/INFO]: Bamboo Growth Modifier: 100%
-[09:12:19] [Server thread/INFO]: SweetBerry Growth Modifier: 100%
-[09:12:19] [Server thread/INFO]: Kelp Growth Modifier: 100%
-[09:12:19] [Server thread/INFO]: Entity Activation Range: An 32 / Mo 32 / Ra 48 / Mi 16 / Tiv true
-[09:12:19] [Server thread/INFO]: Entity Tracking Range: Pl 48 / An 48 / Mo 48 / Mi 32 / Other 64
-[09:12:19] [Server thread/INFO]: Hopper Transfer: 8 Hopper Check: 1 Hopper Amount: 1
-[09:12:19] [Server thread/INFO]: Custom Map Seeds:  Village: 10387312 Desert: 14357617 Igloo: 14357618 Jungle: 14357619 Swamp: 14357620 Monument: 10387313Ocean: 14357621 Shipwreck: 165745295 Slime: 987234911
-[09:12:19] [Server thread/INFO]: Max TNT Explosions: 100
-[09:12:19] [Server thread/INFO]: Tile Max Tick Time: 50ms Entity max Tick Time: 50ms
-[09:12:19] [Server thread/INFO]: View Distance: 10
-[09:12:19] [Server thread/INFO]: Allow Zombie Pigmen to spawn from portal blocks: true
-[09:12:19] [Server thread/INFO]: Item Merge Radius: 2.5
-[09:12:19] [Server thread/INFO]: Item Despawn Rate: 6000
-[09:12:19] [Server thread/INFO]: Arrow Despawn Rate: 1200
-[09:12:19] [Server thread/INFO]: Zombie Aggressive Towards Villager: true
-[09:12:19] [Server thread/INFO]: Nerfing mobs spawned from spawners: false
-[09:12:19] [Server thread/INFO]: Preparing start region for dimension 'world'/minecraft:overworld
-[09:12:20] [Server thread/INFO]: Preparing spawn area: 0%
-[09:12:20] [Server thread/INFO]: Preparing spawn area: 0%
-[09:12:20] [Server thread/INFO]: Preparing spawn area: 0%
-[09:12:24] [Server-Worker-2/INFO]: Preparing spawn area: 0%
-[09:12:24] [Server-Worker-1/INFO]: Preparing spawn area: 0%
-[09:12:24] [Server-Worker-1/INFO]: Preparing spawn area: 0%
-[09:12:24] [Server-Worker-1/INFO]: Preparing spawn area: 0%
-[09:12:24] [Server-Worker-1/INFO]: Preparing spawn area: 0%
-[09:12:24] [Server-Worker-1/INFO]: Preparing spawn area: 0%
-[09:12:24] [Server-Worker-1/INFO]: Preparing spawn area: 0%
-[09:12:24] [Server thread/INFO]: Preparing spawn area: 56%
-[09:12:24] [Server thread/INFO]: Preparing spawn area: 100%
-[09:12:25] [Server thread/INFO]: Loaded 441 spawn chunks for world world
-[09:12:25] [Server thread/INFO]: Time elapsed: 5575 ms
-[09:12:25] [Server thread/INFO]: Preparing start region for dimension 'world_nether'/minecraft:the_nether
-[09:12:25] [Server thread/INFO]: Preparing spawn area: 0%
-[09:12:25] [Server thread/INFO]: Preparing spawn area: 100%
-[09:12:26] [Server thread/INFO]: Preparing spawn area: 100%
-[09:12:26] [Server thread/INFO]: Loaded 441 spawn chunks for world world_nether
-[09:12:26] [Server thread/INFO]: Time elapsed: 1005 ms
-[09:12:26] [Server thread/INFO]: Preparing start region for dimension 'world_the_end'/minecraft:the_end
-[09:12:26] [Server thread/INFO]: Preparing spawn area: 0%
-[09:12:26] [Server thread/INFO]: Preparing spawn area: 100%
-[09:12:26] [Server thread/INFO]: Loaded 441 spawn chunks for world world_the_end
-[09:12:26] [Server thread/INFO]: Time elapsed: 558 ms
-[09:12:26] [Server thread/INFO]: Done (9.591s)! For help, type "help"
-[09:12:26] [Server thread/INFO]: Timings Reset
-[09:13:36] [User Authenticator #1/INFO]: UUID of player alphaRomeo323 is 930e79ca-60e5-4761-ab82-d3c00eb189c9
-[09:13:37] [Server thread/INFO]: alphaRomeo323[/192.168.1.6:61703] logged in with entity id 390 at ([world]7.645911523624942, 83.0, 101.57676934500294)
-[09:21:26] [pool-9-thread-1/INFO]: [LP] Set luckperms.* to true for alpharomeo323 in context global.
-[09:21:26] [ForkJoinPool-2-worker-15/INFO]: [LuckPerms] [Messaging] Sending log with id: ca13e965-2f91-4aed-921f-bd2eb5a0af7e
-[09:21:26] [ForkJoinPool-2-worker-8/INFO]: [LuckPerms] [Messaging] Sending user ping for 'alpharomeo323' with id: 2c858b0e-6dca-405c-99c2-120402b01634
-[09:21:36] [Server thread/INFO]: alphaRomeo323 issued server command: /lp editor
-[09:26:22] [Server thread/INFO]: alphaRomeo323 issued server command: /lp applyedits PmNjdBjsjd
-[09:26:23] [ForkJoinPool-2-worker-26/INFO]: [LuckPerms] [Messaging] Sending log with id: 233db516-acfa-48c2-aed5-e96c5be850dd
-[09:26:23] [pool-9-thread-1/INFO]: [LP] LOG > (alphaRomeo323) [G] (default)
-[09:26:23] [pool-9-thread-1/INFO]: [LP] LOG > webeditor add displayname.Visiter true
-[09:26:23] [ForkJoinPool-2-worker-12/INFO]: [LuckPerms] [Messaging] Sending log with id: 2c8afb86-701c-4fb9-8363-6c10da68eb55
-[09:26:23] [pool-9-thread-1/INFO]: [LP] LOG > (alphaRomeo323) [G] (default)
-[09:26:23] [pool-9-thread-1/INFO]: [LP] LOG > webeditor add weight.0 true
-[09:26:23] [ForkJoinPool-2-worker-30/INFO]: [LuckPerms] [Messaging] Sending log with id: 9df11d71-29f8-4a0d-818b-2a6d15653ddb
-[09:26:23] [pool-9-thread-1/INFO]: [LP] LOG > (alphaRomeo323) [G] (default)
-[09:26:23] [pool-9-thread-1/INFO]: [LP] LOG > webeditor add minecraft.command.seed false
-[09:26:24] [ForkJoinPool-2-worker-5/INFO]: [LuckPerms] [Messaging] Sending log with id: 8dfc6622-aeef-4d8e-bf12-69f041f3bb93
-[09:26:24] [pool-9-thread-1/INFO]: [LP] LOG > (alphaRomeo323) [G] (menber)
-[09:26:24] [pool-9-thread-1/INFO]: [LP] LOG > webeditor add group.default true
-[09:26:24] [pool-9-thread-1/INFO]: [LP] LOG > (alphaRomeo323) [G] (menber)
-[09:26:24] [pool-9-thread-1/INFO]: [LP] LOG > webeditor add weight.1 true
-[09:26:24] [pool-9-thread-1/INFO]: [LP] LOG > (alphaRomeo323) [G] (menber)
-[09:26:24] [pool-9-thread-1/INFO]: [LP] LOG > webeditor add displayname.Menber true
-[09:26:24] [ForkJoinPool-2-worker-12/INFO]: [LuckPerms] [Messaging] Sending log with id: 2ee1ab63-fe6b-47a7-98db-d7dca637d4ec
-[09:26:24] [ForkJoinPool-2-worker-26/INFO]: [LuckPerms] [Messaging] Sending log with id: 1d818080-3d27-48a1-b4fe-cb3b0736e825
-[09:26:26] [ForkJoinPool-2-worker-16/INFO]: [LuckPerms] [Messaging] Sending ping with id: 5cc9d795-29f9-4959-88a6-9b2afcb6430e
-[09:26:26] [Async Chat Thread - #0/INFO]: <alphaRomeo323> test
-[09:28:58] [Server thread/INFO]: alphaRomeo323 issued server command: /lp applyedits LESsKjlGSy
-[09:28:59] [pool-9-thread-1/INFO]: [LP] LOG > (alphaRomeo323) [G] (moderator)
-[09:28:59] [ForkJoinPool-2-worker-5/INFO]: [LuckPerms] [Messaging] Sending log with id: 8cbaa51a-3a42-4066-9aab-19eaefb9db4e
-[09:28:59] [pool-9-thread-1/INFO]: [LP] LOG > webeditor add weight.2 true
-[09:28:59] [ForkJoinPool-2-worker-19/INFO]: [LuckPerms] [Messaging] Sending log with id: 679e324d-a5c6-4ff0-8982-3fc08421b095
-[09:28:59] [pool-9-thread-1/INFO]: [LP] LOG > (alphaRomeo323) [G] (moderator)
-[09:28:59] [pool-9-thread-1/INFO]: [LP] LOG > webeditor add displayname.Moderator true
-[09:28:59] [pool-9-thread-1/INFO]: [LP] LOG > (alphaRomeo323) [G] (moderator)
-[09:28:59] [pool-9-thread-1/INFO]: [LP] LOG > webeditor add group.menber true
-[09:28:59] [ForkJoinPool-2-worker-23/INFO]: [LuckPerms] [Messaging] Sending log with id: 06778772-0de8-4b34-a7e1-18e7723e33df
-[09:29:00] [ForkJoinPool-2-worker-26/INFO]: [LuckPerms] [Messaging] Sending log with id: 1eed2ff8-e35c-43fe-bc5e-d6e457283709
-[09:29:00] [pool-9-thread-1/INFO]: [LP] LOG > (alphaRomeo323) [G] (admin)
-[09:29:00] [pool-9-thread-1/INFO]: [LP] LOG > webeditor add displayname.Admin true
-[09:29:00] [pool-9-thread-1/INFO]: [LP] LOG > (alphaRomeo323) [G] (admin)
-[09:29:00] [pool-9-thread-1/INFO]: [LP] LOG > webeditor add group.moderator true
-[09:29:00] [ForkJoinPool-2-worker-19/INFO]: [LuckPerms] [Messaging] Sending log with id: fb3ef7e3-41a3-4e49-b1f7-0a833f887306
-[09:29:00] [pool-9-thread-1/INFO]: [LP] LOG > (alphaRomeo323) [G] (admin)
-[09:29:00] [pool-9-thread-1/INFO]: [LP] LOG > webeditor add weight.3 true
-[09:29:00] [ForkJoinPool-2-worker-12/INFO]: [LuckPerms] [Messaging] Sending log with id: f0630d21-9b67-43b0-aaf7-26306eb90ac7
-[09:29:00] [ForkJoinPool-2-worker-19/INFO]: [LuckPerms] [Messaging] Sending log with id: b7656f7b-9fdf-4462-8416-1df360380183
-[09:29:00] [pool-9-thread-1/INFO]: [LP] LOG > (alphaRomeo323) [G] (worldedit)
-[09:29:00] [pool-9-thread-1/INFO]: [LP] LOG > webeditor add weight.10 true
-[09:29:03] [ForkJoinPool-2-worker-30/INFO]: [LuckPerms] [Messaging] Sending ping with id: 4fe2a8c2-e01a-4356-96ba-ad2434b614f7
-[09:31:10] [Server thread/INFO]: alphaRomeo323 lost connection: Disconnected
-[09:31:10] [Server thread/INFO]: alphaRomeo323 left the game
-[09:31:17] [Server thread/INFO]: [Server] サーバーを停止します。(10秒前)
-[09:31:27] [Server thread/INFO]: Stopping the server
-[09:31:27] [Server thread/INFO]: Stopping server
-[09:31:27] [Server thread/INFO]: [LuckPerms] Disabling LuckPerms v5.0.39
-[09:31:27] [Server thread/INFO]: [LuckPerms] Closing messaging service...
-[09:31:27] [Server thread/INFO]: [LuckPerms] Closing storage...
-[09:31:27] [Server thread/INFO]: [me.lucko.luckperms.lib.hikari.HikariDataSource] luckperms-hikari - Shutdown initiated...
-[09:31:27] [Server thread/INFO]: [me.lucko.luckperms.lib.hikari.HikariDataSource] luckperms-hikari - Shutdown completed.
-[09:31:27] [Server thread/INFO]: [LuckPerms] Shutting down internal scheduler...
-[09:31:27] [Server thread/INFO]: [LuckPerms] Goodbye!
-[09:31:27] [Server thread/INFO]: Saving players
-[09:31:27] [Server thread/INFO]: Saving worlds
-[09:31:27] [Server thread/INFO]: Saving chunks for level 'world'/minecraft:overworld
-[09:31:27] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
-[09:31:27] [Server thread/INFO]: Saving chunks for level 'world_nether'/minecraft:the_nether
-[09:31:27] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
-[09:31:27] [Server thread/INFO]: Saving chunks for level 'world_the_end'/minecraft:the_end
-[09:31:27] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
-[09:31:27] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
-[09:31:27] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
-[09:31:27] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[06:53:16] [Server thread/INFO]: Stopping the server
+[06:53:16] [Server thread/INFO]: Stopping server
+[06:53:16] [Server thread/INFO]: [dynmap] Disabling dynmap v3.0-beta-9-250
+[06:53:16] [Server thread/INFO]: [dynmap] Unloaded 11 components.
+[06:53:16] [Server thread/INFO]: [dynmap] Stopping map renderer...
+[06:53:17] [Server thread/INFO]: [dynmap] Disabled
+[06:53:17] [Server thread/INFO]: [LuckPerms] Disabling LuckPerms v5.0.39
+[06:53:17] [Server thread/INFO]: [LuckPerms] Closing messaging service...
+[06:53:17] [Server thread/INFO]: [LuckPerms] Closing storage...
+[06:53:17] [Server thread/INFO]: [me.lucko.luckperms.lib.hikari.HikariDataSource] luckperms-hikari - Shutdown initiated...
+[06:53:17] [Server thread/INFO]: [me.lucko.luckperms.lib.hikari.HikariDataSource] luckperms-hikari - Shutdown completed.
+[06:53:17] [Server thread/INFO]: [LuckPerms] Shutting down internal scheduler...
+[06:53:17] [Server thread/INFO]: [LuckPerms] Goodbye!
+[06:53:17] [Server thread/INFO]: Saving players
+[06:53:17] [Server thread/INFO]: Saving worlds
+[06:53:17] [Server thread/INFO]: Saving chunks for level 'world'/minecraft:overworld
+[06:53:17] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[06:53:17] [Server thread/INFO]: Saving chunks for level 'world_nether'/minecraft:the_nether
+[06:53:17] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[06:53:17] [Server thread/INFO]: Saving chunks for level 'world_the_end'/minecraft:the_end
+[06:53:17] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[06:53:17] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[06:53:17] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[06:53:17] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
