@@ -4,3 +4,6 @@ world_the_end/
 urban/
 sigen/
 ops.json
+logs/
+logs/latest.log
+plugins/dynmap/web/standalone/
