@@ -30,8 +30,8 @@ storage:
   hostname: localhost
   port: 3306
   database: PaperMCdynmap
-  userid: dynmap
-  password: dynmap
+  userid: root
+  password: ""
   prefix: ""
   flags: "?allowReconnect=true"
   
