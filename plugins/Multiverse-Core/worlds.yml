@@ -190,7 +190,7 @@ worlds:
   sigen:
     ==: MVWorld
     hidden: 'false'
-    alias: ''
+    alias: sigen
     color: WHITE
     style: NORMAL
     pvp: 'true'
