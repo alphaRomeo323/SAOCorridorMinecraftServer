@@ -326,7 +326,7 @@ Core:
             DB: "PaperMCdata"
 
             #Your MySQL user's name
-            User: "user"
+            User: "root"
 
             #Your MySQL user's password
-            Password: "password"
+            Password: ""
