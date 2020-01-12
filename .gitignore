@@ -1,6 +1,6 @@
-world/*
-world_nether/*
-world_the_end/*
+/world/
+/world_nether/
+/world_the_end/
 urban/*
 sigen/*
 ops.json
