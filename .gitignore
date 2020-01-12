@@ -1,9 +1,8 @@
-/world/
-/world_nether/
-/world_the_end/
-urban/*
-sigen/*
+world/
+world_nether/
+world_the_end/
+urban/
+sigen/
 ops.json
-logs/*
-logs/latest.log
-plugins/dynmap/web/standalone/*
+logs/
+plugins/dynmap/web/standalone/
