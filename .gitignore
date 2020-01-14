@@ -6,3 +6,4 @@ sigen/
 ops.json
 logs/
 plugins/dynmap/web/standalone/
+/plugins/SetHomes/homes.yml

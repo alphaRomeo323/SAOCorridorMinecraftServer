@@ -29,14 +29,6 @@ sets:
                 y: 77.0
                 z: -348.0
                 label: 砂前村
-            kaname-cho:
-                world: world
-                markup: false
-                x: -1402.0
-                icon: urban
-                y: 39.0
-                z: -662.0
-                label: 要町
         lines: {
             }
         layerprio: 0
