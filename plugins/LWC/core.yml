@@ -218,6 +218,16 @@ protections:
             enabled: true
         black_wall_banner:
             enabled: true
+        barrel:
+            enabled: true
+            autoRegister: public
+        smoker:
+            enabled: true
+            autoRegister: private
+        blast_furnace:
+            enabled: true
+            autoRegister: private
+
 modes:
     droptransfer:
         enabled: true
