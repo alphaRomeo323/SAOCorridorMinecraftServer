@@ -3,8 +3,14 @@ world_nether/
 world_the_end/
 urban/
 sigen/
-ops.json
 logs/
-/plugins/dynmap/web/standalone/
-/plugins/SetHomes/homes.yml
+ops.json
+usercache.json
+server.properties
 /plugins/dynmap/markers.yml*
+/plugins/dynmap/web/standalone/
+/plugins/dynmap/world.pending
+/plugins/SetHomes/homes.yml
+/plugins/Multiverse-Core/worlds.yml
+/plugins/Multiverse-Portals/portals.yml
+/plugins/MCBans/
