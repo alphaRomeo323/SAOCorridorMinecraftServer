@@ -1,3 +1,10 @@
 allNamedHomes:
-  930e79ca-60e5-4761-ab82-d3c00eb189c9: {}
+  930e79ca-60e5-4761-ab82-d3c00eb189c9:
+    a:
+      world: world
+      x: -907.3565386168759
+      y: 66.0
+      z: -491.193759575919
+      pitch: 65.25
+      yaw: -208.7185
 unknownHomes: {}
