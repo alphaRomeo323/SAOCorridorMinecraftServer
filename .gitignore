@@ -11,6 +11,4 @@ server.properties
 /plugins/dynmap/web/standalone/
 /plugins/dynmap/world.pending
 /plugins/SetHomes/homes.yml
-/plugins/Multiverse-Core/worlds.yml
-/plugins/Multiverse-Portals/portals.yml
 /plugins/MCBans/
