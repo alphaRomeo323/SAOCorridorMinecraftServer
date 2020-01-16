@@ -20,8 +20,8 @@ backup:
     worlds:
     - '*'
     MaxNumberOfWorldsBackups: 15
-    pluginsfolder: false
-    MaxNumberOfPluginsBackups: 15
+    pluginsfolder: true
+    MaxNumberOfPluginsBackups: 2
     otherfolders: []
     MaxNumberOfOtherFoldersBackups: 15
     excludefolders: []
