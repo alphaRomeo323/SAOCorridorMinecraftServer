@@ -10,5 +10,7 @@ server.properties
 /plugins/dynmap/markers.yml*
 /plugins/dynmap/web/standalone/
 /plugins/dynmap/world.pending
+/plugins/dynmap/ids-by-ip.txt
 /plugins/SetHomes/homes.yml
 /plugins/MCBans/
+/plugins/WorldEdit/sessions/
