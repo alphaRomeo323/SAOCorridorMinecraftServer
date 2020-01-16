@@ -71,8 +71,8 @@ backup:
     zip: false
   googledrive:
     enabled: true
-    authfilepath: plugins/AutoSaveWorld/backup-255908-a5fd4c826dc5.json
-    rootfolderid: 1detNZ5hEfKCBxgz688zB_AEVPm9umXsI
+    authfilepath: ''
+    rootfolderid: ''
     path: asw
     worlds:
     - world
