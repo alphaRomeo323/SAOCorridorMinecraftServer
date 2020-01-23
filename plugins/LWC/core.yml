@@ -25,7 +25,7 @@ optional:
     useActionBar: false
 database:
     adapter: mysql
-    path: plugins/LWC/lwc.db
+    path: /database/PaperMCLWC/lwc.db
     host: localhost
     database: PaperMCdata
     username: 'root'
@@ -35,7 +35,7 @@ database:
 protections:
     denyRedstone: false
     denyHoppers: true
-    autoRegister: true
+    autoRegister: false
     ignoreBlockDestruction: false
     ignoreLeftClick: false
     ignoreRightClick: false
@@ -114,46 +114,67 @@ protections:
             autoRegister: private
         sign:
             enabled: true
+            autoRegister: private
         iron_door:
             enabled: true
+            autoRegister: private
         oak_door:
             enabled: true
+            autoRegister: private
         spruce_door:
             enabled: true
+            autoRegister: private
         birch_door:
             enabled: true
+            autoRegister: private
         jungle_door:
             enabled: true
+            autoRegister: private
         acacia_door:
             enabled: true
+            autoRegister: private
         dark_oak_door:
             enabled: true
+            autoRegister: private
         iron_trapdoor:
             enabled: true
+            autoRegister: private
         oak_trapdoor:
             enabled: true
+            autoRegister: private
         spruce_trapdoor:
             enabled: true
+            autoRegister: private
         birch_trapdoor:
             enabled: true
+            autoRegister: private
         jungle_trapdoor:
             enabled: true
+            autoRegister: private
         acacia_trapdoor:
             enabled: true
+            autoRegister: private
         dark_oak_trapdoor:
             enabled: true
+            autoRegister: private
         oak_fence_gate:
             enabled: true
+            autoRegister: private
         spruce_fence_gate:
             enabled: true
+            autoRegister: private
         birch_fence_gate:
             enabled: true
+            autoRegister: private
         jungle_fence_gate:
             enabled: true
+            autoRegister: private
         acacia_fence_gate:
             enabled: true
+            autoRegister: private
         dark_oak_fence_gate:
             enabled: true
+            autoRegister: private
         white_banner:
             enabled: true
         orange_banner:
@@ -227,7 +248,6 @@ protections:
         blast_furnace:
             enabled: true
             autoRegister: private
-
 modes:
     droptransfer:
         enabled: true
