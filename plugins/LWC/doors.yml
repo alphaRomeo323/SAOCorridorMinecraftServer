@@ -1,6 +1,6 @@
 doors:
     # Enable the opening of Iron Doors when you click on them
-    enabled: false
+    enabled: true
     
     # If true, double doors will open, presuming they are both protected
     # and you can access both
