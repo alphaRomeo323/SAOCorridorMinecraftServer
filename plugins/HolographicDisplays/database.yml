@@ -1,0 +1,21 @@
+urban_info:
+  location: world, -15.000, 67.000, 63.500
+  lines:
+  - '&1高島市ワールド(クリエイティブ)'
+  - '&lワールドに入るとインベントリがリセットされます!!'
+nether_info:
+  location: world, -9.000, 67.000, 63.500
+  lines:
+  - '&cネザー'
+sigen_info:
+  location: world, -9.000, 67.000, 58.500
+  lines:
+  - '&b資源ワールド'
+Map:
+  location: world, -16.500, 71.200, 59.500
+  lines:
+  - 回廊市内マップ
+exit_info:
+  location: sigen, -174.000, 50.200, -66.500
+  lines:
+  - '&aメインワールド&b帰還ポータル'
