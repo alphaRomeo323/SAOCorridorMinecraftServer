@@ -70,7 +70,7 @@ backup:
     maxNumberOfBackups: 4
     zip: false
   googledrive:
-    enabled: true
+    enabled: false
     authfilepath: ''
     rootfolderid: ''
     path: asw
