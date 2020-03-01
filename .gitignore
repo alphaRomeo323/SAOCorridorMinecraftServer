@@ -16,5 +16,3 @@ server.properties
 /plugins/WorldEdit/sessions/
 /plugins/ImageOnMap/
 /plugins/HolographicDisplays/database.yml
-/plugins/Multiverse-Core/worlds.yml
-/plugins/Multiverse-Portals/portals.yml
