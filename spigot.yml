@@ -12,6 +12,7 @@
 
 config-version: 12
 settings:
+  log-villager-deaths: true
   save-user-cache-on-stop-only: false
   sample-count: 12
   timeout-time: 60
@@ -59,6 +60,7 @@ advancements:
   - minecraft:story/disabled
 world-settings:
   default:
+    trident-despawn-rate: 1200
     verbose: true
     mob-spawn-range: 8
     hopper-amount: 1
@@ -101,6 +103,7 @@ world-settings:
       sweetberry-modifier: 100
       kelp-modifier: 100
     entity-activation-range:
+      water: 16
       animals: 32
       monsters: 32
       raiders: 48

@@ -59,6 +59,9 @@ timings:
   server-name: Unknown Server
 world-settings:
   default:
+    seed-based-feature-search: true
+    portal-create-radius: 16
+    entities-target-with-follow-range: false
     falling-block-height-nerf: 0
     tnt-entity-height-nerf: 0
     portal-search-radius: 128
@@ -121,6 +124,7 @@ world-settings:
         min: 20
         max: 40
     game-mechanics:
+      nerf-pigmen-from-nether-portals: false
       scan-for-legacy-ender-dragon: true
       disable-pillager-patrols: false
       disable-unloaded-chunk-enderpearl-exploit: true
