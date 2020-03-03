@@ -44,31 +44,8 @@ worlds:
 -   name: world_nether
     title: world_nether
     enabled: true
-    protected: false
-    showborder: true
-    sendposition: true
-    sendhealth: true
     extrazoomout: 2
-    visibilitylimits: [
-        ]
-    hiddenlimits: [
-        ]
-    hidestyle: stone
     maps:
-    -   class: org.dynmap.hdmap.HDMap
-        name: flat
-        title: Flat
-        prefix: flat
-        perspective: iso_S_90_lowres
-        shader: stdtexture
-        lighting: nethershadows
-        image-format: default
-        mapzoomin: 1
-        mapzoomout: 3
-        boostzoom: 0
-        background: '#300806'
-        append_to_world: ''
-        protected: false
     -   class: org.dynmap.hdmap.HDMap
         name: nether
         title: Surface
@@ -96,6 +73,15 @@ worlds:
         boostzoom: 0
         append_to_world: ''
         protected: false
+    protected: false
+    showborder: true
+    sendposition: true
+    sendhealth: true
+    visibilitylimits: [
+        ]
+    hiddenlimits: [
+        ]
+    hidestyle: stone
 -   name: world_the_end
     title: world_the_end
     enabled: true
@@ -186,3 +172,31 @@ worlds:
     hiddenlimits: [
         ]
     hidestyle: stone
+-   name: sigen_nether
+    title: sigen_nether
+    enabled: true
+    protected: false
+    showborder: true
+    sendposition: true
+    sendhealth: true
+    extrazoomout: 2
+    visibilitylimits: [
+        ]
+    hiddenlimits: [
+        ]
+    hidestyle: stone
+    maps:
+    -   class: org.dynmap.hdmap.HDMap
+        name: nether
+        title: Surface
+        prefix: nt
+        perspective: iso_SE_30_hires
+        shader: stdtexture
+        lighting: nethershadows
+        image-format: default
+        mapzoomin: 1
+        mapzoomout: 5
+        boostzoom: 0
+        background: '#300806'
+        append_to_world: ''
+        protected: false

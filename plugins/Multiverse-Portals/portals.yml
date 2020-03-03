@@ -48,3 +48,43 @@ portals:
     location: -17.0,65.0,63.0:-14.0,68.0,66.0
     world: world
     destination: p:urban-world:sw
+  sigen-world:
+    entryfee:
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    handlerscript: ''
+    owner: alphaRomeo323
+    location: 197.0,65.0,-183.0:198.0,66.0,-182.0
+    world: sigen
+    destination: p:exit:e
+  world-sigen:
+    entryfee:
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    handlerscript: ''
+    owner: alphaRomeo323
+    location: -11.0,65.0,55.0:-8.0,68.0,58.0
+    world: world
+    destination: p:sigen-world:s
+  sigen_nether-world:
+    entryfee:
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    handlerscript: ''
+    owner: alphaRomeo323
+    location: 0.0,80.0,-6.0:0.0,81.0,-6.0
+    world: sigen_nether
+    destination: p:exit:e
+  world-sigen_nether:
+    entryfee:
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    handlerscript: ''
+    owner: alphaRomeo323
+    location: -17.0,65.0,55.0:-14.0,68.0,58.0
+    world: world
+    destination: p:sigen_nether-world:s
