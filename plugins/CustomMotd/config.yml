@@ -1,0 +1,50 @@
+﻿# CustomMotd v2.5 Config.yml
+# author jack_basukeraihu
+# NicoNicoCommunity http://com.nicovideo.jp/community/co1930226
+
+
+# === 接続人数の表示を変更 === #
+# [trueで有効 falseで無効]
+# この表示は偽物なので、実際には変わりません
+FakeOnlinePlayers: true
+# 最大人数の表示の変更 (playersで現在のオンライン人数,noneで従来の表示に置き換わります)
+MaxPlayer: none
+# 現在の人数の表示の変更 (restで最大人数-1,noneで従来の表示に置き換わります)
+# 【注意】オンライン人数を偽装した状態でJapan Minecraft Servers等のサーバーリストに登録するとサーバーがロックされる可能性があります
+OnlinePlayer: none
+
+# === プレイヤーリストの表示を変更 === #
+# [trueで有効 falseで無効]
+# この表示は偽物なので、実際には変わりません
+FakePlayerList: false
+
+# &でカラーコードに置き換わります
+PlayerList:
+   - '&CM&Finecraft'
+   - 'M&Ci&Fnecraft'
+   - 'Mi&Cn&Fecraft'
+   - 'Min&Ce&Fcraft'
+   - 'Mine&Cc&Fraft'
+   - 'Minec&Cr&Faft'
+   - 'Minecr&Ca&Fft'
+   - 'Minecra&Cf&Ft'
+   - 'Minecraf&Ct&F'
+
+# === MOTDの表示を変更 === #
+# line1が1行目 line2が2行目です
+# &でカラーコードに置き換わります
+# %verでサーバーのバージョンに置き換わります
+# %onlineで現在のオンライン人数に置き換わります
+# %maxで最大ログイン可能人数に置き換わります
+# %randomでランダムリストの中のメッセージのどれかに置き換わります
+
+SendMotd:
+  line1: '%random'
+  line2: '&6バージョン:%ver '
+
+RandomMessage:
+   - '&b回廊結晶サーバーへようこそ!!'
+   - '&b回廊結晶サーバー &4現在営業中!!'
+   - '&aMinecraft&b回廊結晶サーバー!'
+
+# 日本語を使用すると文字化けする場合はフォーラムより報告していただけると助かります
