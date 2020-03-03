@@ -4,11 +4,11 @@ regions:
         keep-names-that-lack-uuids: true
     use-creature-spawn-event: true
     sql:
-        use: true
+        use: false
         dsn: jdbc:mysql://localhost/PaperMCdata
         username: worldedit
         password: ''
-        table-prefix: ''
+        table-prefix: worldguard
     use-paper-entity-origin: false
     enable: true
     invincibility-removes-mobs: false

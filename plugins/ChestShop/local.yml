@@ -58,3 +58,8 @@ CANNOT_CREATE_SHOP_HERE: "You can't create shop here!"
 TOGGLE_MESSAGES_OFF: "You will no longer receive messages from your shop(s)."
 TOGGLE_MESSAGES_ON: "You will now receive messages from your shop(s)."
 
+PROTECTED_SHOP_SIGN: "Successfully protected the shop sign with LWC!"
+
+TOGGLE_ACCESS_ON: "You can no longer trade at shops that you have access to"
+TOGGLE_ACCESS_OFF: "You can now trade at shops that you have access to"
+
