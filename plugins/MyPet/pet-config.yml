@@ -6,6 +6,31 @@
 
 MyPet:
   Pets:
+    Bee:
+      HP: 20.0
+      Speed: 0.3
+      Food:
+      - poppy
+      - dandelion
+      - blue_orchid
+      - allium
+      - azure_bluet
+      - red_tulip
+      - orange_tulip
+      - white_tulip
+      - pink_tulip
+      - oxeye_daisy
+      - cornflower
+      - lily_of_the_valley
+      - wither_rose
+      LeashRequirements:
+      - LowHp
+      CustomRespawnTimeFactor: 0
+      CustomRespawnTimeFixed: 0
+      LeashItem: lead
+      ReleaseOnDeath: false
+      RemoveAfterRelease: false
+      CanGlide: true
     Bat:
       HP: 10
       Speed: 0.3

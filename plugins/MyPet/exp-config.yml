@@ -9,6 +9,9 @@ Custom:
     Max: 300.0
     Min: 150.0
 Default:
+  BEE:
+    Min: 1.0
+    Max: 3.0
   WITHER_SKELETON:
     Min: 5.0
     Max: 5.0

@@ -160,7 +160,7 @@ ngwordAction: mask
 
 # 通常チャット（非チャンネルチャット）の装飾を、LunaChatから行うかどうか。
 # Vault がロードされていない場合は、この設定は無視される（false扱い）。
-enableNormalChatMessageFormat: true
+enableNormalChatMessageFormat: false
 
 # チャット装飾のフォーマット設定。
 # フォーマット設定には、下記のキーワードが使用できます。
@@ -171,7 +171,7 @@ enableNormalChatMessageFormat: true
 # %date     : 日付
 # %time     : 時刻
 # %msg      : 発言内容（Japanize変換された場合は、Japanize結果を含みます。）
-normalChatMessageFormat: '&f%prefix%username&a:&f %msg'
+normalChatMessageFormat: '&f%world%username&a:&f %msg'
 
 # 通常チャット（非チャンネルチャット）で、カラーコード（&aや&bなど）を
 # 使用可能にするかどうか。falseに設定すると、カラーコードは変換されません。
