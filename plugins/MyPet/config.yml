@@ -31,15 +31,15 @@ MyPet:
     Skip-Target-AI-Ticks: 0
     FollowStartDistance: 7.0
   Repository:
-    Type: SQLite
+    Type: MySQL
     ConvertFrom: ''
     LoadDelay: 20
     MySQL:
-      Database: mypet
+      Database: PaperMCdata
       TablePrefix: ''
       Host: localhost
       Password: ''
-      User: root
+      User: worldedit
       Port: 3306
       MaxConnections: 8
       CharacterEncoding: utf8
