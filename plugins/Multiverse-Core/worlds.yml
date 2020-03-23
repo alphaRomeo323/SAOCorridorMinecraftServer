@@ -54,7 +54,7 @@ worlds:
     style: NORMAL
     pvp: 'true'
     scale: '16.0'
-    respawnWorld: ''
+    respawnWorld: world
     allowWeather: 'true'
     difficulty: EASY
     spawning:
@@ -101,7 +101,7 @@ worlds:
     style: NORMAL
     pvp: 'true'
     scale: '1.0'
-    respawnWorld: ''
+    respawnWorld: urban
     allowWeather: 'true'
     difficulty: EASY
     spawning:
@@ -148,7 +148,7 @@ worlds:
     style: NORMAL
     pvp: 'true'
     scale: '8.0'
-    respawnWorld: ''
+    respawnWorld: world
     allowWeather: 'true'
     difficulty: EASY
     spawning:
@@ -195,7 +195,7 @@ worlds:
     style: NORMAL
     pvp: 'true'
     scale: '1.0'
-    respawnWorld: ''
+    respawnWorld: world
     allowWeather: 'true'
     difficulty: EASY
     spawning:
@@ -242,7 +242,7 @@ worlds:
     style: NORMAL
     pvp: 'true'
     scale: '8.0'
-    respawnWorld: ''
+    respawnWorld: world
     allowWeather: 'true'
     difficulty: EASY
     spawning:
