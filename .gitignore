@@ -17,3 +17,4 @@ server.properties
 /plugins/WorldEdit/sessions/
 /plugins/ImageOnMap/
 /plugins/HolographicDisplays/database.yml
+/plugins/Votifier/rsa/public.key
