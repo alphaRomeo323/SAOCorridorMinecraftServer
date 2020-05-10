@@ -1,0 +1,19 @@
+lastName: tokyo677
+lastSave: 0
+earnedIncome: 0.0
+seenPitch: false
+dateModified: 1589097790561
+language: en_us
+hold: []
+scoreboard:
+  order: job
+  sort: asc
+jobs:
+  taxes:
+    showEveryTime: true
+    exp: 0.0
+    level: 1
+  bulldozer:
+    showEveryTime: true
+    exp: 0.0
+    level: 1
