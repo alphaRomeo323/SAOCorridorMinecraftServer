@@ -4,8 +4,8 @@ exp: 5
 defeat:
   pays: true
   hide: false
-  '1': wolf spider zombie skeleton slime
-  '2': enderman creeper cave_spider
-  '3': pig_zombie ghast
-  '4': blaze magma_cube
-  '5': silverfish
+  '1': zombie skeleton
+  '2': vex husk drowned stray
+  '3': pig_zombie pillager zombie_villager
+  '4': witch vindicator wither_skeleton
+  '5': ravager evoker

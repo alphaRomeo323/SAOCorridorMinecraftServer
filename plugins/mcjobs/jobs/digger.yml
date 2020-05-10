@@ -4,5 +4,6 @@ break:
   pays: true
   hide: false
   '1': dirt sand grass
-  '2': gravel clay
+  '2': gravel clay coarse_dirt andesite granite diorite
+  '3': podzol sandstone
   '4': soul_sand MYCELIUM

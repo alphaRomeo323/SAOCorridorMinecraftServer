@@ -1,11 +1,12 @@
-basepay: 3.0
+basepay: 5.0
+show_every_time: true
 exp: 5
-pvp:
+defeat:
   pays: true
   hide: false
-  kill-interval: 30
-  '1': 1
-  '2': 25
-  '3': 75
-  '4': 150
-  '5': 300
+  '1': spider slime
+  '2': wolf creeper cave_spider
+  '3': ghast silverfish enderman
+  '4': blaze magma_cube phantom endermite
+  '5': shulker guardian
+
