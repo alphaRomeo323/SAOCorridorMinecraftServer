@@ -2,11 +2,11 @@ lastName: alphaRomeo323
 lastSave: 0
 earnedIncome: 0.0
 seenPitch: false
-dateModified: 1589097790561
-language: en_us
+dateModified: 1589103786524
+language: en
 hold: []
 scoreboard:
-  order: job
+  order: none
   sort: asc
 jobs:
   taxes:
