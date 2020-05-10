@@ -6,8 +6,8 @@ break:
   '1': stone coal_ore netherrack
   '2': iron_ore redstone_ore
   '3': gold_ore lapis_ore glowstone emerald_ore
-  '4': diamond_ore
-  '5': obsidian
+  '4': nether_quartz_ore
+  '5': obsidian diamond_ore
 smelt:
-  '1': stone
-  '2': iron_ingot gold_ingot
+  '1': iron_ingot
+  '2': gold_ingot

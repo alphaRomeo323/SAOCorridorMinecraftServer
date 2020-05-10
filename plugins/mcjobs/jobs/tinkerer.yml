@@ -1,24 +1,17 @@
-basepay: 5.0
-exp: 2
-place:
-  pays: true
-  hide: false
-  '1': redstone_wire REDSTONE_TORCH
-  '2':
-  - stone_button
-  - lever
-  - STONE_PRESSURE_PLATE
-  - ACACIA_PRESSURE_PLATE
-  - BIRCH_PRESSURE_PLATE
-  - DARK_OAK_PRESSURE_PLATE
-  - JUNGLE_PRESSURE_PLATE
-  - OAK_PRESSURE_PLATE
-  - SPRUCE_PRESSURE_PLATE
-  - REPEATER
-  '3': PISTON STICKY_PISTON REDSTONE_LAMP note_block
-  '4': jukebox
+basepay: 25.0
+exp: 5
 craft:
   pays: true
   hide: false
-  '1': RAIL detector_rail
-  '2': powered_rail tripwire_hook
+  '1': WOODEN_SWORD WOODEN_AXE WOODEN_SHOVEL WOODEN_HOE WOODEN_PICKAXE
+  '2': stone_sword bow stone_axe stone_shovel stone_hoe stone_pickaxe
+  '3': GOLDEN_SWORD GOLDEN_AXE GOLDEN_SHOVEL GOLDEN_HOE GOLDEN_PICKAXE iron_helmet iron_boots golden_helmet golden_boots
+  '4': iron_sword iron_axe iron_shovel iron_hoe iron_pickaxe iron_chestplate iron_leggings golden_chestplate golden_leggings
+  '5': diamond_sword diamond_axe diamond_shovel diamond_hoe diamond_pickaxe diamond_helmet diamond_boots diamond_chestplate diamond_leggings
+repair:
+  pays: true
+  hide: false
+  '1': stone_sword bow stone_axe stone_shovel stone_hoe stone_pickaxe
+  '2': GOLDEN_SWORD GOLDEN_AXE GOLDEN_SHOVEL GOLDEN_HOE GOLDEN_PICKAXE iron_sword iron_axe iron_shovel iron_hoe iron_pickaxe iron_helmet golden_helmet iron_boots golden_boots iron_chestplate golden_chestplate
+    iron_leggings golden_leggings
+  '3': diamond_sword diamond_axe diamond_shovel diamond_hoe diamond_pickaxe diamond_helmet diamond_boots diamond_chestplate diamond_leggings

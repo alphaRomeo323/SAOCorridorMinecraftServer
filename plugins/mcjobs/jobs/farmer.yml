@@ -14,7 +14,9 @@ place:
 defeat:
   pays: true
   hide: false
-  '2': cow chicken pig sheep
+  '2': cow chicken pig sheep squid
+  '3': rabbit
+  '4': mooshroom
 shear:
   pays: true
   hide: false

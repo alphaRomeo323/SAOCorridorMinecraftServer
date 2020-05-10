@@ -4,9 +4,8 @@ exp: 5
 potion:
   pays: true
   hide: false
-  '1': mundane thick
-  '2': poison weakness
-  '3': slowness damage splash_poison poison_ext poison_upg splash_weakness weakness_ext
-  '4': slowness_ext splash_slowness splash_damage damage_upg splash_poison_ext splash_poison_upg
-    splash_weakness_ext
+  '1': mundane thick awkward
+  '2': poison weakness regeneration speed fire_resistance strength healing
+  '3': slowness damage splash_poison poison_ext poison_upg splash_weakness weakness_ext fire_resistance_ext splash_fire_resistance splash_speed speed_ext speed_upg splash_healing healing_upg splash_regeneration regeneration_ext regeneration_upg splash_strength strength_ext strength_upg
+  '4': slowness_ext splash_slowness splash_damage damage_upg splash_poison_ext splash_poison_upg splash_weakness_ext splash_fire_resistance_ext splash_speed_ext splash_speed_upg splash_healing_upg splash_regeneration_ext splash_regeneration_upg splash_strength_upg splash_strength_ext
   '5': splash_slowness_ext splash_damage_upg
