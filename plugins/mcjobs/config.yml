@@ -22,10 +22,10 @@ ranks:
   master: 500
   grandmaster: 1000
 database:
-  type: yaml
-  username: user
-  password: password
-  name: sql
+  type: mysql
+  username: mcjobs
+  password: ''
+  name: PaperMCdata
   host: localhost
   port: 3306
 materials:
