@@ -4,11 +4,11 @@ regions:
         keep-names-that-lack-uuids: true
     use-creature-spawn-event: true
     sql:
-        use: true
+        use: false
         dsn: jdbc:mysql://localhost/PaperMCdata
-        username: root
+        username: worldedit
         password: ''
-        table-prefix: ''
+        table-prefix: worldguard
     use-paper-entity-origin: false
     enable: true
     invincibility-removes-mobs: false
@@ -74,16 +74,16 @@ ignition:
     block-lighter: false
 fire:
     disable-lava-fire-spread: false
-    disable-all-fire-spread: false
+    disable-all-fire-spread: true
     disable-fire-spread-blocks: []
     lava-spread-blocks: []
 mobs:
     block-creeper-explosions: false
     block-creeper-block-damage: false
     block-wither-explosions: false
-    block-wither-block-damage: false
+    block-wither-block-damage: true
     block-wither-skull-explosions: false
-    block-wither-skull-block-damage: false
+    block-wither-skull-block-damage: true
     block-enderdragon-block-damage: false
     block-enderdragon-portal-creation: false
     block-fireball-explosions: false
@@ -92,13 +92,13 @@ mobs:
     allow-tamed-spawns: true
     disable-enderman-griefing: false
     disable-snowman-trails: false
-    block-painting-destroy: false
-    block-item-frame-destroy: false
-    block-armor-stand-destroy: false
+    block-painting-destroy: true
+    block-item-frame-destroy: true
+    block-armor-stand-destroy: true
     block-plugin-spawning: true
     block-above-ground-slimes: false
     block-other-explosions: false
-    block-zombie-door-destruction: false
+    block-zombie-door-destruction: true
     block-creature-spawn: []
 player-damage:
     disable-fall-damage: false
@@ -126,9 +126,9 @@ weather:
     disable-lightning-strike-fire: false
     disable-thunderstorm: false
     disable-weather: false
-    disable-pig-zombification: false
-    disable-villager-witchification: false
-    disable-powered-creepers: false
+    disable-pig-zombification: true
+    disable-villager-witchification: true
+    disable-powered-creepers: true
     always-raining: false
     always-thundering: false
 dynamics:

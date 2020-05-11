@@ -1,0 +1,16 @@
+basepay: 4.0
+show_every_time: true
+exp: 2
+fishing:
+  pays: true
+  hide: false
+  '1': cod salmon
+  '2': pufferfish
+  '3': tropical_fish nautilus_shell
+  '4': bow fishing_rod
+  '10': name_tag enchanted_book
+defeat:
+  pays: true
+  hide: false
+  '2': cod salmon tropical_fish
+  '3': pufferfish

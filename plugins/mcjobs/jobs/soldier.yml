@@ -1,0 +1,11 @@
+basepay: 5.0
+show_every_time: true
+exp: 5
+defeat:
+  pays: true
+  hide: false
+  '1': zombie skeleton
+  '2': vex husk drowned stray
+  '3': pig_zombie pillager zombie_villager
+  '4': witch vindicator wither_skeleton
+  '5': ravager evoker

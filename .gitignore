@@ -3,6 +3,7 @@ world_nether/
 world_the_end/
 urban/
 sigen/
+sigen_nether/
 logs/
 ops.json
 usercache.json
@@ -16,5 +17,4 @@ server.properties
 /plugins/WorldEdit/sessions/
 /plugins/ImageOnMap/
 /plugins/HolographicDisplays/database.yml
-/plugins/Multiverse-Core/worlds.yml
-/plugins/Multiverse-Portals/portals.yml
+/plugins/Votifier/rsa/*

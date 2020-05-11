@@ -28,7 +28,7 @@ database:
     path: /database/PaperMCLWC/lwc.db
     host: localhost
     database: PaperMCdata
-    username: 'root'
+    username: 'LWC'
     password: ''
     prefix: lwc_
     ping_interval: 300

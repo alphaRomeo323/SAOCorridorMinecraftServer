@@ -1,0 +1,27 @@
+VotingPlugin:
+  Version: 'git-Paper-280 (MC: 1.15.2)'
+  ServiceSites:
+  - minecraft.jp
+PluginVersions:
+  VotingPlugin: 5.21.2
+PrevDay: 11
+PrevWeek: 20
+Month: MAY
+IntColumns:
+- DailyTotal
+- WeeklyTotal
+- DayVoteStreak
+- BestDayVoteStreak
+- WeekVoteStreak
+- BestWeekVoteStreak
+- VotePartyVotes
+- MonthVoteStreak
+- Points
+- HighestDailyTotal
+- MileStoneTotal
+- AllTimeTotal
+- HighestMonthlyTotal
+- MilestoneCount
+- MonthTotal
+- HighestWeeklyTotal
+- LastMonthTotal

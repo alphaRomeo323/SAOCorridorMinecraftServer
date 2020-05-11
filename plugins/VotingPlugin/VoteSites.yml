@@ -1,0 +1,20 @@
+# 
+# Reward for any site
+# Similar to AnySiteReward
+# This requires the site to be configured in order to get the reward.
+VoteSites:
+  minecraft_jp:
+    Enabled: true
+    ServiceSite: minecraft.jp
+    VoteURL: https://minecraft.jp/servers/5d435013a9b0bdac5700834d
+    VoteDelay: 24
+    Item:
+      Material: DIAMOND
+      Amount: 1
+    Rewards:
+      Messages:
+        Player: '&aThanks for voting on %ServiceSite%!'
+      Money:
+        Min: 200
+        Max: 500
+EverySiteReward: []

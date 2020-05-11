@@ -1,0 +1,12 @@
+basepay: 5.0
+show_every_time: true
+exp: 5
+defeat:
+  pays: true
+  hide: false
+  '1': spider slime
+  '2': wolf creeper cave_spider
+  '3': ghast silverfish enderman
+  '4': blaze magma_cube phantom endermite
+  '5': shulker guardian
+

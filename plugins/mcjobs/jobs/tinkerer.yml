@@ -1,0 +1,17 @@
+basepay: 25.0
+exp: 5
+craft:
+  pays: true
+  hide: false
+  '1': WOODEN_SWORD WOODEN_AXE WOODEN_SHOVEL WOODEN_HOE WOODEN_PICKAXE
+  '2': stone_sword bow stone_axe stone_shovel stone_hoe stone_pickaxe
+  '3': GOLDEN_SWORD GOLDEN_AXE GOLDEN_SHOVEL GOLDEN_HOE GOLDEN_PICKAXE iron_helmet iron_boots golden_helmet golden_boots crossbow
+  '4': iron_sword iron_axe iron_shovel iron_hoe iron_pickaxe iron_chestplate iron_leggings golden_chestplate golden_leggings
+  '5': diamond_sword diamond_axe diamond_shovel diamond_hoe diamond_pickaxe diamond_helmet diamond_boots diamond_chestplate diamond_leggings
+repair:
+  pays: true
+  hide: false
+  '1': stone_sword bow stone_axe stone_shovel stone_hoe stone_pickaxe
+  '2': GOLDEN_SWORD GOLDEN_AXE GOLDEN_SHOVEL GOLDEN_HOE GOLDEN_PICKAXE iron_sword iron_axe iron_shovel iron_hoe iron_pickaxe iron_helmet golden_helmet iron_boots golden_boots iron_chestplate golden_chestplate
+    iron_leggings golden_leggings crossbow
+  '3': diamond_sword diamond_axe diamond_shovel diamond_hoe diamond_pickaxe diamond_helmet diamond_boots diamond_chestplate diamond_leggings trident

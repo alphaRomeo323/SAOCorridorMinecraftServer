@@ -1,0 +1,16 @@
+basepay: 2.0
+show_every_time: true
+exp: 1
+craft:
+  pays: true
+  hide: false
+  '1': bread sugar
+  '2': cookie beetroot_soup
+  '3': fermented_spider_eye pumpkin_pie mushroom_stew
+  '4': cake GLISTERING_MELON_SLICE rabbit_stew
+  '5': golden_apple
+cook:
+  pays: true
+  hide: false
+  '1': cooked_cod cooked_salmon dried_kelp
+  '2': cooked_beef cooked_chicken cooked_beef baked_potato cooked_mutton cooked_rabbit
