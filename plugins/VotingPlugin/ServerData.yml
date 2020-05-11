@@ -1,0 +1,9 @@
+VotingPlugin:
+  Version: 'git-Paper-122 (MC: 1.15.2)'
+  ServiceSites:
+  - minecraft.jp
+PluginVersions:
+  VotingPlugin: 5.21.1
+PrevDay: 11
+PrevWeek: 20
+Month: MAY
