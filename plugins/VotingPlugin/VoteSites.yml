@@ -61,7 +61,7 @@ VoteSites:
         #Money: 200
         Item:
           Diamond:
-            ID: 264
+            Material: DIAMOND
             Data: 0
             Amount: 1
 EverySiteReward: []
