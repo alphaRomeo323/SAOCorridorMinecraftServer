@@ -9,16 +9,16 @@
 # - SQLITE 
 # - FLAT
 # - MYSQL
-DataStorage: SQLITE
+DataStorage: MYSQL
 
 # Information for mysql
 # See the end of the config for cache options
 MySQL:
-  Host: ''
+  Host: localhost
   # Default port is 3306
-  Port: 3306 
-  Database: ''
-  Username: ''
+  Port: 3306
+  Database: PaperMCdata
+  Username: vote
   Password: ''
   # Max number of connections
   MaxConnections: 1
@@ -27,7 +27,7 @@ MySQL:
   # Affecting this value may affect performance
   MaxSize: -1
   # Table name prefix, for use with mutliple servers
-  Prefix: ''
+  Prefix: VotingPlugin
   #UseSSL: true
 
 # Let players who never joined before vote
@@ -46,30 +46,10 @@ AllowUnJoinedCheckServer: true
 # By default this should be all setup to work
 # as long as vote delays are done properly
 VoteReminding:
-  # Enable vote reminding
-  # This will remind player when he can vote on all sites
-  # Requires VoteDelays to be setup properly
-  # Use /vote next to see when you can be reminded
-  # Players require the perm "VotingPlugin.Login.RemindVotes" or "VotingPlugin.Player"
   Enabled: true
-
-  # Whether or not to remind only once when the player can vote
-  # Does not apply to login reminds.
   RemindOnlyOnce: true
-
-  # Will remind player on login if he can vote
-  # Ignores value above
   RemindOnLogin: true
-
-  # Delay to remind votes in minutes
-  # Only works if above is false
   RemindDelay: 30
-
-  # Run reward files on remind
-  # By default, the reward file will be created for you
-  # and have the default message
-  # Edit the message at AdvancedCore/Rewards/Remind.yml (or any other reward listed)
-  # Can add titles and more in the reward file
   Rewards:
     Messages:
       Player: '&aRemember to vote!'
@@ -83,6 +63,26 @@ VoteReminding:
     ActionBar:
       Message: '&cRemember to vote'
       Delay: 30
+  # Enable vote reminding
+  # This will remind player when he can vote on all sites
+  # Requires VoteDelays to be setup properly
+  # Use /vote next to see when you can be reminded
+  # Players require the perm "VotingPlugin.Login.RemindVotes" or "VotingPlugin.Player"
+
+  # Whether or not to remind only once when the player can vote
+  # Does not apply to login reminds.
+
+  # Will remind player on login if he can vote
+  # Ignores value above
+
+  # Delay to remind votes in minutes
+  # Only works if above is false
+
+  # Run reward files on remind
+  # By default, the reward file will be created for you
+  # and have the default message
+  # Edit the message at AdvancedCore/Rewards/Remind.yml (or any other reward listed)
+  # Can add titles and more in the reward file
     
 # ------------------------------------------------
 # Format
@@ -129,7 +129,7 @@ Format:
     # Format for /vote
     # %num% = the number of the site, for a numbered list
     # %url% = site URL
-    Vote: 
+    Vote:
       Text:
       - '&4&lVote for our server!'
       
@@ -142,8 +142,11 @@ Format:
       # Text will be sent before this
       Sites: '&4%num%: &c&l%SiteName% - &c%url%'
       
+      # If true, links will always be forced as urls
+      ForceLinks: true
+      
       # Format for /vote next
-      Next: 
+      Next:
         # First line
         Title: '&3&l%player% Next Votes:'
         
@@ -154,7 +157,7 @@ Format:
         
         Info:
           # Message when player can vote
-          CanVote: 'Go Vote!'
+          CanVote: Go Vote!
           # Time until vote msg
           # %hours% = hours until next vote
           # %minutes% = minutes until next vote
@@ -175,7 +178,7 @@ Format:
         # Spelling of TimeType can be changed under Format.Commands.TimeFormats
         TimeFormat: '%amount% %TimeType%'
         LastVoted: '%times% ago'
-        NeverVoted: 'Never voted'
+        NeverVoted: Never voted
         
       # Format for /vote total
       Total:
@@ -253,17 +256,17 @@ Format:
   
   # Time Format
   # See https://docs.oracle.com/javase/7/docs/api/java/text/SimpleDateFormat.html
-  TimeFormat: 'EEE, d MMM yyyy HH:mm'
+  TimeFormat: EEE, d MMM yyyy HH:mm
   
   TimeFormats:
-    Day: 'Day'
-    Days: 'Days'
-    Hour: 'Hour'
-    Hours: 'Hours'
-    Minute: 'Minute'
-    Minutes: 'Minutes'
-    Second: 'Second'
-    Seconds: 'Seconds'
+    Day: Day
+    Days: Days
+    Hour: Hour
+    Hours: Hours
+    Minute: Minute
+    Minutes: Minutes
+    Second: Second
+    Seconds: Seconds
   
   # Format for signs
   # SiteName may be all, depending on sign
@@ -293,12 +296,12 @@ Format:
   
   # Prev/Next page tems in GUIs
   PrevItem:
-    Material: 'BLACK_STAINED_GLASS_PANE'
+    Material: BLACK_STAINED_GLASS_PANE
     Amount: 1
     Name: '&aPrevious Page'
     
   NextItem:
-    Material: 'BLACK_STAINED_GLASS_PANE'
+    Material: BLACK_STAINED_GLASS_PANE
     Amount: 1
     Name: '&aNext Page'
   
@@ -307,10 +310,10 @@ Format:
   # Display text
   # Used in /vote top (GUI)
   TopVoter:
-    Daily: 'Daily'
-    Weekly: 'Weekly'
-    Monthly: 'Monthly'
-    AllTime: 'AllTime'
+    Daily: Daily
+    Weekly: Weekly
+    Monthly: Monthly
+    AllTime: AllTime
 
 # ------------------------------------------------
 # GUI Options
@@ -324,62 +327,52 @@ LastMonthGUI: false
 # Note: Slots start at 0 instead of 1, max slot is 53 (don't go over) (E.g: last slot in first row of inventory is 8)
 # Item Material's can be found here: https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Material.html
 GUI:
-  # GUI for /vote gui, /vgui, votegui
   VoteGUI:
-    # Items will be orders as it is below
     URL:
-      # Standard item format, lore is automaticly applied 
       Item:
-        Material: 'BOW'
+        Material: BOW
         Data: 0
         Amount: 1
         Name: '&4URL'
-        # You can set skulls of the player using the following
-        # Remove the # to enable
-        #Skull: '%Player%'
     Next:
       Item:
-        Material: 'COMPASS'
+        Material: COMPASS
         Data: 0
         Amount: 1
         Name: '&4Next'
     Last:
       Item:
-        Material: 'CLOCK'
+        Material: CLOCK
         Data: 0
         Amount: 1
         Name: '&4Last'
     Total:
       Item:
-        Material: 'CHEST'
+        Material: CHEST
         Data: 0
         Amount: 1
         Name: '&4Total'
     Top:
       Item:
-        Material: 'SIGN'
+        Material: SIGN
         Data: 0
         Amount: 1
         Name: '&4Top'
     Today:
       Item:
-        Material: 'BOOK'
+        Material: BOOK
         Data: 0
         Amount: 1
         Name: '&4Today'
     Shop:
       Item:
-        Material: 'DIAMOND'
+        Material: DIAMOND
         Data: 0
         Amount: 1
         Name: '&4Vote Shop'
         Lore:
         - '&aYou currently have %points% points'
-      
-  # GUI for /vote url
-  # And /vote if enabled in Config.yml
   VoteURL:
-    # GUI Name
     Name: '&cVoteURL'
     BackButton: true
     SiteName: '&c%Name%'
@@ -389,53 +382,37 @@ GUI:
     AllUrlsButton:
       RequireAllSitesVoted: true
       AlreadyVotedItem:
-        Material: 'REDSTONE_BLOCK'
-        Data: 0 
+        Material: REDSTONE_BLOCK
+        Data: 0
         Amount: 1
         Name: '&4All Voting Sites'
         Lore:
         - '&cClick Me'
       CanVoteItem:
-        Material: 'EMERALD_BLOCK'
+        Material: EMERALD_BLOCK
         Data: 0
         Amount: 1
         Name: '&4All Voting Sites'
         Lore:
         - '&cClick Me'
     AlreadyVotedItem:
-      Material: 'REDSTONE_BLOCK'
-      Data: 0 
+      Material: REDSTONE_BLOCK
+      Data: 0
       Amount: 1
     CanVoteItem:
-      Material: 'EMERALD_BLOCK'
+      Material: EMERALD_BLOCK
       Data: 0
       Amount: 1
     URLText: '%VoteUrl%'
-    
   VoteRewardBackButton: false
-  # Customize /vote reward
-  # Show players what you get when you vote on each site
   VoteReward:
-    # Name of votesite
     ExampleVoteSite:
-      # items in /vote reward sitename
       Items:
-        # Item
-        # This is not the item display name
-        # Do not have 2 of the same items
         Diamond:
-          # Item ID
-          Material: 'DIAMOND'
-          # Item Data (Eg 1:4, data is 4)
+          Material: DIAMOND
           Data: 0
-          # Amount of items
-          # Should be greater than 0
           Amount: 1
-          # Item name
-          # Remove this line for no name
           Name: '&4Example'
-          # Lore
-          # Remove this line for no lore
           Lore:
           - '&4Line 1'
   VoteLast:
@@ -445,12 +422,12 @@ GUI:
     Name: 'VoteNext: %player%'
     BackButton: true
   VoteToday:
-    Name: 'VoteToday'
+    Name: VoteToday
     Line: '&6%VoteSite% : %Time%'
     IconTitle: '%player%'
     BackButton: true
   VoteTop:
-    Name: 'VoteTop %topvoter%'
+    Name: VoteTop %topvoter%
     BackButton: false
     Item:
       Name: '&3&l%position%: &3%player%'
@@ -458,42 +435,37 @@ GUI:
     SwitchItem:
       Name: '&3Switch TopVoter'
       Lore: '&bCurrently: %Top%'
-      Material: 'SIGN'
+      Material: SIGN
       Amount: 1
-      # 8 Slots over from the bottom left
       Slot: 7
-    # Number of topvoters to display on page +9
-    # 9 Slots on the botton are used for page buttons
     Size: 27
-    # If true, /vote top will show player heads
     UseSkull: true
-    # Item for player in GUI if use skull is false
     PlayerItem:
-      Material: 'PAPER'
+      Material: PAPER
   VoteTotal:
     Name: 'VoteTotal: %player%'
     BackButton: true
     DayTotal:
       Item:
-        Material: 'CLOCK'
+        Material: CLOCK
         Name: '&cDaily Total'
         Lore: '&c&lTotal: &c%Total%'
         Amount: 1
     WeekTotal:
       Item:
-        Material: 'CLOCK'
+        Material: CLOCK
         Name: '&cWeekly Total'
         Lore: '&c&lTotal: &c%Total%'
         Amount: 1
     MonthTotal:
       Item:
-        Material: 'CLOCK'
+        Material: CLOCK
         Name: '&cMonthly Total'
         Lore: '&c&lTotal: &c%Total%'
         Amount: 1
     AllTimeTotal:
       Item:
-        Material: 'CLOCK'
+        Material: CLOCK
         Name: '&cAllTime Total'
         Lore: '&c&lTotal: &c%Total%'
         Amount: 1
@@ -501,19 +473,19 @@ GUI:
     Name: 'VoteBest: %player%'
     DayBest:
       Item:
-        Material: 'CLOCK'
+        Material: CLOCK
         Name: '&cDaily Best'
         Lore: '&c&lBest: &c%Best%'
         Amount: 1
     WeekBest:
       Item:
-        Material: 'CLOCK'
+        Material: CLOCK
         Name: '&cWeekly Best'
         Lore: '&c&lBest: &c%Best%'
         Amount: 1
     MonthBest:
       Item:
-        Material: 'CLOCK'
+        Material: CLOCK
         Name: '&cMonthly Best'
         Lore: '&c&lBest: &c%Best%'
         Amount: 1
@@ -522,48 +494,79 @@ GUI:
     BackButton: false
     CurrentDayStreak:
       Item:
-        Material: 'CLOCK'
+        Material: CLOCK
         Name: '&cCurrent Daily Streak'
         Lore: '&c&lStreak: &c%Streak%'
         Amount: 1
     CurrentWeekStreak:
       Item:
-        Material: 'CLOCK'
+        Material: CLOCK
         Name: '&cCurrent Weekly Streak'
         Lore: '&c&lStreak: &c%Streak%'
         Amount: 1
     CurrentMonthStreak:
       Item:
-        Material: 'CLOCK'
+        Material: CLOCK
         Name: '&cCurrent Monthly Streak'
         Lore: '&c&lStreak: &c%Streak%'
         Amount: 1
     HighestDayStreak:
       Item:
-        Material: 'CLOCK'
+        Material: CLOCK
         Name: '&cHighest Daily Streak'
         Lore: '&c&lStreak: &c%Streak%'
         Amount: 1
     HighestWeekStreak:
       Item:
-        Material: 'CLOCK'
+        Material: CLOCK
         Name: '&cHighest Weekly Streak'
         Lore: '&c&lStreak: &c%Streak%'
         Amount: 1
     HighestMonthStreak:
       Item:
-        Material: 'CLOCK'
+        Material: CLOCK
         Name: '&cHighest Monthly Streak'
         Lore: '&c&lStreak: &c%Streak%'
         Amount: 1
   VoteURLSite:
     Name: 'VoteSite: %site%'
   VoteGUIName: '&cVoteGUI: &c&l%player%'
-  VoteRewardName: 'VoteReward'
-  VoteShopName: 'VoteShop'
+  VoteRewardName: VoteReward
+  VoteShopName: VoteShop
+  # GUI for /vote gui, /vgui, votegui
+    # Items will be orders as it is below
+      # Standard item format, lore is automaticly applied 
+        # You can set skulls of the player using the following
+        # Remove the # to enable
+        #Skull: '%Player%'
+      
+  # GUI for /vote url
+  # And /vote if enabled in Config.yml
+    # GUI Name
+    
+  # Customize /vote reward
+  # Show players what you get when you vote on each site
+    # Name of votesite
+      # items in /vote reward sitename
+        # Item
+        # This is not the item display name
+        # Do not have 2 of the same items
+          # Item ID
+          # Item Data (Eg 1:4, data is 4)
+          # Amount of items
+          # Should be greater than 0
+          # Item name
+          # Remove this line for no name
+          # Lore
+          # Remove this line for no lore
+      # 8 Slots over from the bottom left
+    # Number of topvoters to display on page +9
+    # 9 Slots on the botton are used for page buttons
+    # If true, /vote top will show player heads
+    # Item for player in GUI if use skull is false
   
 BackButton:
-  Material: 'BARRIER'
+  Material: BARRIER
   Data: 0
   Amount: 1
   Name: '&8Back to VoteGUI'
@@ -574,35 +577,41 @@ VoteShopEnabled: true
 VoteShopHideLimitedReached: true
 # Requires above to be false
 VoteShopLimitReached: '&aYou reached your limit'
+VoteShopRequireConfirmation: false
 Shop:
-  # Identifier
-  # Used in placeholders for formats
-  # Do not have spaces in the identifier
   Diamond:
-    # Item
-    Material: 'DIAMOND'
+    Material: DIAMOND
     Data: 0
     Amount: 1
     Name: '&4Buy A Diamond'
-    # You can set skulls of the player using the following
-    # Remove the # to enable
-    #Skull: '%Player%'
     Lore:
-    - '&c&lCost: &c3 Voting Points'
-    # Number of voting points this cost
-    Cost: 3
-    # Permission required, leave blank for no permission
+    - '&c&lCost: &c5 Voting Points'
+    Cost: 5
     Permission: ''
-    # Limit how many times you can buy this
-    #Limit: 3
-    # If true, item is not buyable
-    #NotBuyable: false
-    # Rewards to run if player buys successfully
     Rewards:
       Items:
         Diamond:
-          Material: 'DIAMOND'
-          Amount: 1     
+          Material: DIAMOND
+          Amount: 1
+  # Identifier
+  # Used in placeholders for formats
+  # Do not have spaces in the identifier
+    # Item
+    # You can set skulls of the player using the following
+    # Remove the # to enable
+    #Skull: '%Player%'
+    # Number of voting points this cost
+    # Permission required, leave blank for no permission
+    # Limit how many times you can buy this
+    #Limit: 3
+    # Reset limit daily/weekly/monthly
+    #Reset:
+      #Daily: false
+      #Weekly: false
+      #Monthly: false
+    # If true, item is not buyable
+    #NotBuyable: false
+    # Rewards to run if player buys successfully
      
 # ------------------------------------------------
 # Extra Rewards
@@ -614,121 +623,90 @@ Shop:
 # Rewards will be given if there is a reward to give
 
 # First vote rewards
-FirstVote: 
+FirstVote:
   Messages:
     Player: '&aYou voted for your first time!'
 
 # All vote rewards
 # Reward for voting on all sites in one day
-AllSites: 
+AllSites:
   Messages:
     Player: '&aYou voted on all sites in 1 day!'
 
 Cumulative:
-  # Number of votes required
-  # Allows multiple cumulative rewards
-  # Number be be around ' (E.g. '1')
-  # Can have multiple listed here
-  '20':
+  20:
     Enabled: false
-    # Wether or not votes must be made in same day/week
-    # Useful if you want to require a certain number of voting sites to be voted on
-    # for a daily/weekly reward instead of all of them
     VotesInSameDay: false
     VotesInSameWeek: false
-    Rewards: 
+    Rewards:
       Messages:
         Player: '&aYou got %cumulative% cumulative votes!'
 
 VoteParty:
-  # Wether or not vote party is enabled
   Enabled: false
-  # Number of votes required to give rewards
   VotesRequired: 20
+  GiveAllPlayers: false
+  ResetEachDay: false
+  ResetMonthly: false
+  ResetExtraVotesMonthly: false
+  CountFakeVotes: true
+  UserVotesRequired: 0
+  Broadcast: '&cReached the vote party amount!'
+  Commands: []
+  Rewards:
+    Commands:
+    - 'say %player%'
+    Items:
+      DIAMOND:
+        Material: DIAMOND
+        Amount: 1
+  # Wether or not vote party is enabled
+  # Number of votes required to give rewards
   # Increase the amount of votes required on each vote party reached
   #IncreaseVotesRquired: 10
   # If true, players who did not vote to reach the votes required will 
   # recieve the reward
-  GiveAllPlayers: false
   # If true, the vote count will reset each day
-  ResetEachDay: false
   # Reset at the end of the month
-  ResetMonthly: false
   # Reset extra votes
-  ResetExtraVotesMonthly: false
   # Count votes from /av vote?
-  CountFakeVotes: true
   # Number of user votes that apply to vote party total the user needs to get rewards
-  UserVotesRequired: 0
   # Broadcast when vote party reached
-  Broadcast: '&cReached the vote party amount!'
   # List of commands to execute, these only execute once.
   # %player% does not work here
-  Commands: []
   # Rewards to give per player
-  Rewards: 
-    Commands:
-    - say %player%
-    Items:
-      DIAMOND:
-        Material: 'DIAMOND'
-        Amount: 1
   
 # Reset milestones at end of the month
 ResetMilestonesMonthly: false
-  
-MileStones:
-  # Number of votes required
-  # Allows multiple milestones
-  # Number be around ' (E.g. '1')
-  # Can have multiple listed here
-  '20':
-    Enabled: false
-    Rewards: 
-      Messages:
-        Player: '&aYou got %milestone% milestone votes!'
    
 VoteStreak:
-  # Valid options: Day, Week, Month
   Day:
-    # Number of days in a row
-    # Each day requires one vote
-    # Add a - to give a reward for every multiple (e.g. 2- = 2,4,6,8, and so on)
-    '2':
-      # Enabled or not
+    2:
       Enabled: false
-      # Rewards to give
       Rewards:
         Messages:
-          Player: "&aYou voted for %Streak% %Type%'s in a row!"
+          Player: '&aYou voted for %Streak% %Type%''s in a row!'
   Week:
-    # Number of weeks in a row
-    # Requires atleast one vote per week
-    '2':
-      # Enabled or not
+    2:
       Enabled: false
-      # Rewards to give
       Rewards:
         Messages:
-          Player: "&aYou voted for %Streak% %Type%'s in a row!"
+          Player: '&aYou voted for %Streak% %Type%''s in a row!'
   Month:
-    # Number of months in a row
-    # Requires atleast 1 vote per month
-    '2':
-      # Enabled or not
+    2:
       Enabled: false
-      # Rewards to give
       Rewards:
         Messages:
-          Player: "&aYou voted for %Streak% %Type%'s in a row!"
+          Player: '&aYou voted for %Streak% %Type%''s in a row!'
   Requirement:
-    # Require certain percentage of votes
     UsePercentage: false
-    # Percentage requirements of votes
-    # 50 = %50
     Day: 50
     Week: 50
     Month: 50
+  # Valid options: Day, Week, Month
+    # Require certain percentage of votes
+    # Percentage requirements of votes
+    # 50 = %50
     
 # Reward given when vote cooldown ended
 VoteCoolDownEndedReward: []
@@ -781,8 +759,6 @@ StoreTopVoters:
 EnableMonthlyAwards: true
 # Rewards to give
 MonthlyAwards:
-  # Position. 1 is first in top voter, 2 is second, etc...
-  # Using 1-10 will reward players in first to tenth place with the same reward
   1:
     Rewards:
       Messages:
@@ -791,11 +767,12 @@ MonthlyAwards:
     Rewards:
       Messages:
         Player: '&aYou came in second place in %TopVoter%!'
+  # Position. 1 is first in top voter, 2 is second, etc...
+  # Using 1-10 will reward players in first to tenth place with the same reward
     
 EnableWeeklyAwards: false
 # Rewards to give on weekly top voter
 WeeklyAwards:
-  # Position. 1 is first in top voter, 2 is second, etc...
   1:
     Rewards:
       Messages:
@@ -804,13 +781,12 @@ WeeklyAwards:
     Rewards:
       Messages:
         Player: '&aYou came in second place in %TopVoter%!'
+  # Position. 1 is first in top voter, 2 is second, etc...
     
 EnableDailyRewards: false
 # Rewards to give on daily top voter
 DailyAwards:
-  # Position. 1 is first in top voter, 2 is second, etc...
   1:
-    # Reward files to give
     Rewards:
       Messages:
         Player: '&aYou came in first place in %TopVoter%!'
@@ -818,6 +794,8 @@ DailyAwards:
     Rewards:
       Messages:
         Player: '&aYou came in second place in %TopVoter%!'
+  # Position. 1 is first in top voter, 2 is second, etc...
+    # Reward files to give
     
 # ------------------------------------------------
 # Advanced
@@ -834,8 +812,8 @@ AddTotals: true
 
 # Click sound when using gui
 # Set to none for no sound
-ClickSound: 
-  Sound: 'UI_BUTTON_CLICK'
+ClickSound:
+  Sound: UI_BUTTON_CLICK
   Volume: 1.0
   Pitch: 1.0
   
@@ -986,12 +964,12 @@ Server: PleaseSet
 
 # Bungee communication, add bungee host/port here
 BungeeServer:
-  Host: '127.0.0.1'
+  Host: 127.0.0.1
   Port: 1297
   
 # Bungee communication, add this to bungee server
 SpigotServer:
-  Host: '127.0.0.1'
+  Host: 127.0.0.1
   Port: 1298
 
 # ---------------------------------------------------------
@@ -1025,7 +1003,7 @@ AlwaysCloseInventory: false
 # CHAT
 # This is mainly used for admin gui's to type in values
 RequestAPI:
-  DefaultMethod: 'Anvil'
+  DefaultMethod: Anvil
   DisabledMethods: []
 
 # Shouldn't need to change this
