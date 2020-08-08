@@ -10,7 +10,9 @@ dirBlocksFace: true
 maxDistToBlock: 2
 minBlocksAbove: 1
 allowedBlocks:
-- ACACIA_STAIRS
+- ACACIA_SLAB[type=bottom]
+- ACACIA_STAIRS[half=bottom]
+- ANDESITE_SLAB
 - ANDESITE_STAIRS
 - BIRCH_STAIRS
 - BRICK_STAIRS
@@ -41,6 +43,7 @@ allowedBlocks:
 - SPRUCE_STAIRS
 - STONE_BRICK_STAIRS
 - STONE_STAIRS
+- 
 heightAdjustments:
   default: 0.8
   cake: 0.3
