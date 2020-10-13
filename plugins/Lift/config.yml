@@ -3,6 +3,10 @@
 # autoPlace will automatically move players to be fully in the elevator
 # checkFloor will make sure all floors have glass blocks (at the cost of possible lag when starting a lift)
 # preventEntry will prevent players from entering an active elevator (at the cost of possible lag when lifts are running)
+mouseScroll: true
+STRING_scrollSelectEnabled: §7Scrollable floor selection enabled. Click on sign with
+  an item for default mode
+STRING_scrollSelectDisabled: §7Scrollable floor selection disabled
 metrics: true
 maxLiftArea: 16
 maxHeight: 256

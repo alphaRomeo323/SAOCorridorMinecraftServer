@@ -4,15 +4,16 @@
 # Messages: 
 # 	You can use chat colors in messages with this symbol §.
 # 	I.E: §b will change any text after it to an aqua blue color.
-# 	Color codes can be found here https://www.digminecraft.com/lists/color_list_pc.php
+# 	Color codes may be found here https://www.digminecraft.com/lists/color_list_pc.php
 # Time: 
 # 	Any time value is based in seconds.
 # Things to Note: 
 # 	Set any integer option to 0 for it to be ignored.
 # 	The max-homes does not include the default un-named home.
-# 	Use %s as the seconds variable in the cooldown message.
+# 	Use %s as the seconds variable in the cool down message.
 
-max-homes: 5
+max-homes:
+  default: 5
 max-homes-msg: §4You have reached the maximum amount of saved homes!
 tp-delay: 3
 tp-cooldown: 30

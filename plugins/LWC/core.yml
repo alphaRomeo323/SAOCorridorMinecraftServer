@@ -7,7 +7,6 @@ core:
     showMyNotices: false
     opIsLWCAdmin: false
     disableHistory: false
-    townyBorders: false
     groupPrefix: group.
     updateNotifier: true
     factionCheck: false
@@ -23,12 +22,14 @@ optional:
     - player
     useProtectionLimits: true
     useActionBar: false
+    alternativeHopperProtection: false
+    useFormattedInfo: true
 database:
     adapter: mysql
     path: /database/PaperMCLWC/lwc.db
     host: localhost
     database: PaperMCdata
-    username: 'LWC'
+    username: LWC
     password: ''
     prefix: lwc_
     ping_interval: 300

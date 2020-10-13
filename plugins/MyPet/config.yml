@@ -116,6 +116,7 @@ MyPet:
       Creative: false
       DropWhenOwnerDies: false
     Beacon:
+      Disable-Head-Textures: false
       HungerDecreaseTime: 100
       Party-Support: true
     Ride:
