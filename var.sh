@@ -6,4 +6,4 @@ scr="papermc" #Screenのホスト名
 int=10 #終了インターバル(sec)
 mon=5 #監視インターバル(sec)
 timeout=120 #最大監視時間(sec)
-logger -s -p user.info -t [server] Variable set. 
+echo Variable set.
