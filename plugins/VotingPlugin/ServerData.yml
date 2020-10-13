@@ -4,9 +4,9 @@ VotingPlugin:
   - minecraft.jp
 PluginVersions:
   VotingPlugin: 5.21.2
-PrevDay: 8
-PrevWeek: 32
-Month: AUGUST
+PrevDay: 13
+PrevWeek: 42
+Month: OCTOBER
 IntColumns:
 - DailyTotal
 - WeeklyTotal
