@@ -8,16 +8,6 @@ portals:
     owner: alphaRomeo323
     location: -25.0,65.0,59.0:-25.0,68.0,62.0
     world: world
-  nether-world:
-    entryfee:
-      amount: 0.0
-    safeteleport: true
-    teleportnonplayers: false
-    handlerscript: ''
-    owner: alphaRomeo323
-    location: -26.0,40.0,30.0:-25.0,42.0,32.0
-    world: world_nether
-    destination: p:exit:e
   world-nether:
     entryfee:
       amount: 0.0
