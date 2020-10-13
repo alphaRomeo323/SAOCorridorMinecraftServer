@@ -2,12 +2,12 @@ worlds:
   world_the_end:
     ==: MVWorld
     hidden: 'false'
-    alias: ''
+    alias: world_the_end
     color: WHITE
     style: NORMAL
     pvp: 'true'
     scale: '16.0'
-    respawnWorld: ''
+    respawnWorld: world
     allowWeather: 'true'
     difficulty: EASY
     spawning:
@@ -33,9 +33,9 @@ worlds:
     keepSpawnInMemory: 'true'
     spawnLocation:
       ==: MVSpawnLocation
-      x: 0.0
-      y: 65.0
-      z: 0.0
+      x: 6.5
+      y: 63.0
+      z: -6.5
       pitch: 0.0
       yaw: 0.0
     autoLoad: 'true'
@@ -49,7 +49,7 @@ worlds:
   world:
     ==: MVWorld
     hidden: 'false'
-    alias: ''
+    alias: world
     color: WHITE
     style: NORMAL
     pvp: 'true'
@@ -80,9 +80,9 @@ worlds:
     keepSpawnInMemory: 'true'
     spawnLocation:
       ==: MVSpawnLocation
-      x: 0.0
+      x: 0.5
       y: 70.0
-      z: 0.0
+      z: 0.5
       pitch: 0.0
       yaw: 0.0
     autoLoad: 'true'
@@ -93,15 +93,62 @@ worlds:
     generator: 'null'
     playerLimit: '-1'
     allowFlight: 'true'
+  urban:
+    ==: MVWorld
+    hidden: 'false'
+    alias: urban
+    color: WHITE
+    style: NORMAL
+    pvp: 'true'
+    scale: '1.0'
+    respawnWorld: urban
+    allowWeather: 'true'
+    difficulty: EASY
+    spawning:
+      ==: MVSpawnSettings
+      animals:
+        ==: MVSpawnSubSettings
+        spawn: 'false'
+        spawnrate: '-1'
+        exceptions: []
+      monsters:
+        ==: MVSpawnSubSettings
+        spawn: 'false'
+        spawnrate: '-1'
+        exceptions: []
+    entryfee:
+      ==: MVEntryFee
+      amount: '0.0'
+    hunger: 'true'
+    autoHeal: 'true'
+    adjustSpawn: 'true'
+    portalForm: ALL
+    gameMode: ADVENTURE
+    keepSpawnInMemory: 'true'
+    spawnLocation:
+      ==: MVSpawnLocation
+      x: 0.0
+      y: 68.0
+      z: 0.0
+      pitch: 0.0
+      yaw: 0.0
+    autoLoad: 'true'
+    bedRespawn: 'true'
+    worldBlacklist: []
+    environment: NORMAL
+    seed: '8847318954015330596'
+    generator: 'null'
+    playerLimit: '-1'
+    allowFlight: 'true'
   world_nether:
     ==: MVWorld
     hidden: 'false'
-    alias: ''
+    alias: world_nether
     color: WHITE
     style: NORMAL
     pvp: 'true'
     scale: '8.0'
-    respawnWorld: ''
+    respawnWorld: world
     allowWeather: 'true'
     difficulty: EASY
     spawning:
@@ -127,11 +174,11 @@ worlds:
     keepSpawnInMemory: 'true'
     spawnLocation:
       ==: MVSpawnLocation
-      x: -22.0
+      x: -21.5
       y: 40.0
-      z: 31.0
+      z: 31.5
       pitch: 0.0
-      yaw: 0.0
+      yaw: 270.0
     autoLoad: 'true'
     bedRespawn: 'true'
     worldBlacklist: []
