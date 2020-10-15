@@ -157,3 +157,4 @@ MAX_SHOP_AMOUNT: 3456
 CHECK_ACCESS_FOR_SHOP_USE: false
 # Should LWC limits block shop creations?
 LWC_LIMITS_BLOCK_CREATION: true
+
