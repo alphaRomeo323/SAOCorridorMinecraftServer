@@ -1,0 +1,33 @@
+sit-config:
+  disabled-worlds: []
+  require-empty-hand: false
+  max-distance: 2.0
+  chair-entity-type: ARROW
+  stairs:
+    enabled: true
+    rotate: true
+    max-width: 16
+    special-end:
+      sign: true
+      corner-stairs: true
+  additional-blocks: {}
+sit-effects:
+  healing:
+    enabled: false
+    max-percent: 100
+    interval: 20
+    amount: 1
+  itempickup:
+    enabled: false
+sit-restrictions:
+  commands:
+    all: false
+    list: []
+messages:
+  enabled: true
+  sit:
+    enter: '&7You are now sitting.'
+    leave: '&7You are no longer sitting.'
+    enabled: '&7You have enabled chairs for yourself!'
+    disabled: '&7You have disabled chairs for yourself!'
+    commandrestricted: '&7You can''t issue this command while sitting'

@@ -59,6 +59,8 @@ jobscommand:
   language-header: '&ePress on the wished Language to change:'
   language-changed: '&6Changed language successfull.'
   no-language: '&cCan''t find the wished language &e%g&c.'
+  next-reset: '&aThe next Reset of the Jobs is in &e%g'
+  no-reset: '&aThe Jobs will be never reset.'
 jobsnotify:
   and: and
   hours: hours
@@ -120,6 +122,8 @@ jobsleave:
   quit: You have quit &6%j&7.
   donthave: You do not have the &6%j&c job.
   leavedefault: You cannot leave &6%j&c because it is a default job.
+  reset: You have leave &6%j&7 and all job informations have been forgotten.
+  leave: You have leave &6%j&7.
 jobslist:
   available: '&e%p&2, available jobs are:'
   jobsin: Jobs in &cred&2 you already have.
@@ -689,6 +693,12 @@ entities:
   player: PLAYER
   unknown: UNKNOWN
   bee: BEE
+  zombified_piglin: ZOMBIFIED PIGLIN
+  hoglin: HOGLIN
+  piglin: PIGLIN
+  strider: STRIDER
+  zoglin: ZOGLIN
+  piglin_brute: PIGLIN BRUTE
 languages:
   en: English
   de: German
@@ -1668,6 +1678,109 @@ materials:
   zombie_spawn_egg: ZOMBIE SPAWN EGG
   zombie_villager_spawn_egg: ZOMBIE VILLAGER SPAWN EGG
   zombie_wall_head: ZOMBIE WALL HEAD
+  crimson_nylium: CRIMSON NYLIUM
+  warped_nylium: WARPED NYLIUM
+  crimson_planks: CRIMSON PLANKS
+  warped_planks: WARPED PLANKS
+  nether_gold_ore: NETHER GOLD ORE
+  crimson_stem: CRIMSON STEM
+  warped_stem: WARPED STEM
+  stripped_crimson_stem: STRIPPED CRIMSON STEM
+  stripped_warped_stem: STRIPPED WARPED STEM
+  stripped_crimson_hyphae: STRIPPED CRIMSON HYPHAE
+  stripped_warped_hyphae: STRIPPED WARPED HYPHAE
+  crimson_hyphae: CRIMSON HYPHAE
+  warped_hyphae: WARPED HYPHAE
+  crimson_fungus: CRIMSON FUNGUS
+  warped_fungus: WARPED FUNGUS
+  crimson_roots: CRIMSON ROOTS
+  warped_roots: WARPED ROOTS
+  nether_sprouts: NETHER SPROUTS
+  weeping_vines: WEEPING VINES
+  twisting_vines: TWISTING VINES
+  crimson_slab: CRIMSON SLAB
+  warped_slab: WARPED SLAB
+  crimson_pressure_plate: CRIMSON PRESSURE PLATE
+  warped_pressure_plate: WARPED PRESSURE PLATE
+  polished_blackstone_pressure_plate: POLISHED BLACKSTONE PRESSURE PLATE
+  crimson_fence: CRIMSON FENCE
+  warped_fence: WARPED FENCE
+  soul_soil: SOUL SOIL
+  basalt: BASALT
+  polished_basalt: POLISHED BASALT
+  soul_torch: SOUL TORCH
+  crimson_trapdoor: CRIMSON TRAPDOOR
+  warped_trapdoor: WARPED TRAPDOOR
+  chain: CHAIN
+  crimson_fence_gate: CRIMSON FENCE GATE
+  warped_fence_gate: WARPED FENCE GATE
+  cracked_nether_bricks: CRACKED NETHER BRICKS
+  chiseled_nether_bricks: CHISELED NETHER BRICKS
+  crimson_stairs: CRIMSON STAIRS
+  warped_stairs: WARPED STAIRS
+  blackstone_wall: BLACKSTONE WALL
+  polished_blackstone_wall: POLISHED BLACKSTONE WALL
+  polished_blackstone_brick_wall: POLISHED BLACKSTONE BRICK WALL
+  crimson_button: CRIMSON BUTTON
+  warped_button: WARPED BUTTON
+  polished_blackstone_button: POLISHED BLACKSTONE BUTTON
+  quartz_bricks: QUARTZ BRICKS
+  warped_wart_block: WARPED WART BLOCK
+  crimson_door: CRIMSON DOOR
+  warped_door: WARPED DOOR
+  netherite_ingot: NETHERITE INGOT
+  netherite_scrap: NETHERITE SCRAP
+  netherite_sword: NETHERITE SWORD
+  netherite_shovel: NETHERITE SHOVEL
+  netherite_pickaxe: NETHERITE PICKAXE
+  netherite_axe: NETHERITE AXE
+  netherite_hoe: NETHERITE HOE
+  netherite_helmet: NETHERITE HELMET
+  netherite_chestplate: NETHERITE CHESTPLATE
+  netherite_leggings: NETHERITE LEGGINGS
+  netherite_boots: NETHERITE BOOTS
+  crimson_sign: CRIMSON SIGN
+  warped_sign: WARPED SIGN
+  hoglin_spawn_egg: HOGLIN SPAWN EGG
+  piglin_spawn_egg: PIGLIN SPAWN EGG
+  piglin_brute_spawn_egg: PIGLIN BRUTE SPAWN EGG
+  strider_spawn_egg: STRIDER SPAWN EGG
+  zoglin_spawn_egg: ZOGLIN SPAWN EGG
+  zombified_piglin_spawn_egg: ZOMBIFIED PIGLIN SPAWN EGG
+  warped_fungus_on_a_stick: WARPED FUNGUS ON A STICK
+  music_disc_pigstep: MUSIC DISC PIGSTEP
+  piglin_banner_pattern: PIGLIN BANNER PATTERN
+  soul_lantern: SOUL LANTERN
+  soul_campfire: SOUL CAMPFIRE
+  shroomlight: SHROOMLIGHT
+  lodestone: LODESTONE
+  netherite_block: NETHERITE BLOCK
+  ancient_debris: ANCIENT DEBRIS
+  target: TARGET
+  crying_obsidian: CRYING OBSIDIAN
+  blackstone: BLACKSTONE
+  blackstone_slab: BLACKSTONE SLAB
+  blackstone_stairs: BLACKSTONE STAIRS
+  gilded_blackstone: GILDED BLACKSTONE
+  polished_blackstone: POLISHED BLACKSTONE
+  polished_blackstone_slab: POLISHED BLACKSTONE SLAB
+  polished_blackstone_stairs: POLISHED BLACKSTONE STAIRS
+  chiseled_polished_blackstone: CHISELED POLISHED BLACKSTONE
+  polished_blackstone_bricks: POLISHED BLACKSTONE BRICKS
+  polished_blackstone_brick_slab: POLISHED BLACKSTONE BRICK SLAB
+  polished_blackstone_brick_stairs: POLISHED BLACKSTONE BRICK STAIRS
+  cracked_polished_blackstone_bricks: CRACKED POLISHED BLACKSTONE BRICKS
+  respawn_anchor: RESPAWN ANCHOR
+  soul_fire: SOUL FIRE
+  soul_wall_torch: SOUL WALL TORCH
+  weeping_vines_plant: WEEPING VINES PLANT
+  twisting_vines_plant: TWISTING VINES PLANT
+  crimson_wall_sign: CRIMSON WALL SIGN
+  warped_wall_sign: WARPED WALL SIGN
+  potted_crimson_fungus: POTTED CRIMSON FUNGUS
+  potted_warped_fungus: POTTED WARPED FUNGUS
+  potted_crimson_roots: POTTED CRIMSON ROOTS
+  potted_warped_roots: POTTED WARPED ROOTS
 scoreboard:
   info:
     '1':

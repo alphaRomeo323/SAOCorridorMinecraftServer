@@ -1,12 +1,3 @@
-VotingPlugin:
-  Version: 'git-Paper-280 (MC: 1.15.2)'
-  ServiceSites:
-  - minecraft.jp
-PluginVersions:
-  VotingPlugin: 5.21.2
-PrevDay: 13
-PrevWeek: 42
-Month: OCTOBER
 IntColumns:
 - DailyTotal
 - WeeklyTotal
@@ -25,3 +16,10 @@ IntColumns:
 - MonthTotal
 - HighestWeeklyTotal
 - LastMonthTotal
+VotingPlugin:
+  Version: 'git-Paper-229 (MC: 1.16.3)'
+PluginVersions:
+  VotingPlugin: 5.24.1
+PrevDay: 16
+PrevWeek: 42
+Month: OCTOBER

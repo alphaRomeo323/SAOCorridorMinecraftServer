@@ -1,0 +1,12 @@
+[Unit]
+Description = PaperMC Screen daemon
+
+[Service]
+ExecStart = /usr/local/bin/PaperMCserver/start.sh
+ExecStop = /usr/local/bin/PaperMCserver/stop.sh
+Type = simple
+User = worker
+Restart = no
+
+[Install]
+WantedBy = multi-user.target

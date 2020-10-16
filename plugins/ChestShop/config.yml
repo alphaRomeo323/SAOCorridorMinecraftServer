@@ -135,3 +135,26 @@ GRIEFPREVENTION_INTEGRATION: false
 #Do you want to only let people build inside RedProtect regions?
 REDPROTECT_INTEGRATION: false
 
+# Should the plugin log some messages that are useful for debugging?
+DEBUG: false
+# Do you want to turn off the automatic notifications for new development builds?
+TURN_OFF_DEV_UPDATE_NOTIFIER: false
+# Do you want to include some values of this config in the metrics? (This will not leak sensitive data but help in the development process)
+INCLUDE_SETTINGS_IN_METRICS: true
+
+# The default language when the client's language can't be found.
+DEFAULT_LANGUAGE: "en"
+# Should the plugin try to use a language file that matches the client's locale setting?
+USE_CLIENT_LOCALE: true
+# If true, people will be able to sell/buy everything available of the same type.
+SHIFT_SELLS_EVERYTHING: false
+# The uuid of the economy account for the Admin Shop. Useful for fake accounts as normally only accounts of players work
+SERVER_ECONOMY_ACCOUNT_UUID: 00000000-0000-0000-0000-000000000000
+
+# Maximum amount of items that can be bought/sold at a shop. Default 3456 is a double chest of 64 stacks.
+MAX_SHOP_AMOUNT: 3456
+# Only allow users to buy/sell that have access to the sign's protection? (E.g. LWC protection)
+CHECK_ACCESS_FOR_SHOP_USE: false
+# Should LWC limits block shop creations?
+LWC_LIMITS_BLOCK_CREATION: true
+
